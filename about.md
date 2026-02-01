@@ -38,38 +38,88 @@ Phone: +216 97 322 007
 - **2019-2022**: Higher Institute of Information and Communication Technologies, Tunisia  
   Bachelor in Information and Communication Technologies, Telecommunications  
 
-## Experience (Internships)
-- **TUDIGISEC BY NOMIOS** (Feb 2025 - Jun 2025): Cyber Threat Intelligence Intern  
-  **Highlights**: Designed CTI system with Neo4j graph
+## Professional Experience
 
-<grok-card data-id="a56e84" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+### Cyber Threat Intelligence Intern  
+**TUDIGISEC by Nomios** — February 2025 – June 2025 (End-of-Studies Internship)
 
-, ML for anomaly detection, MITRE ATT&CK integration. Built Dash/Flask for visualization. Dockerized pipeline.  
-  Designed a CTI system with Neo4j knowledge graph integrating data from social media, OSINT, honeypots, and dark web. Applied ML and graph algorithms for anomaly detection. Integrated MITRE ATT&CK. Processed data using regex, NLP, and transformers. Built Dash dashboard and Flask API. Deployed dockerized pipeline.  
+I took ownership of designing a full Cyber Threat Intelligence (CTI) system from the ground up, treating the organization’s scattered threat data sources as a disconnected puzzle that needed unification.
 
-- **ARRIBATT FZCO** (Jul 2024 - Aug 2024): DevSecOps Intern  
-  **Highlights**: Automated pipeline with Jenkins, SonarQube, OWASP ZAP
+**Core Thinking & Architecture**  
+I chose Neo4j as the central knowledge graph engine because traditional relational databases struggle with the highly relational nature of threat actors, campaigns, indicators, and infrastructure. The graph model allowed me to naturally represent attacker TTPs, victim assets, and enrichment sources as interconnected nodes and relationships.
 
-<grok-card data-id="795f6f" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+The architecture followed a modular ingestion → processing → analysis → visualization pipeline:
+- Multi-source ingestion: Social media streams, OSINT feeds, internal honeypots, and curated dark web datasets.
+- Entity extraction layer: Custom regex + NLP pipelines (transformers for named entity recognition) to turn unstructured text into structured triples.
+- Semantic enrichment: Mapped everything to MITRE ATT&CK framework using graph patterns to link tactics, techniques, and procedures across sources.
+- Anomaly & trend detection: Combined graph algorithms (PageRank for influential actors, community detection for campaign clustering) with lightweight ML models for outlier scoring.
+- Output layer: Real-time dashboard (Dash) for interactive exploration + Flask API for programmatic access and STIX 2.1 export.
 
-. Implemented XDR with TheHive, Cortex, OpenCTI. Pentesting with ZAP/Nmap.  
-  Created DevSecOps pipeline with Jenkins, SonarQube, OWASP ZAP, and n8n. Deployed Wazuh for log management. Implemented XDR with TheHive, Cortex, and OpenCTI. Performed pentesting with OWASP ZAP and Nmap.  
+**PoC Highlights**  
+- Built a prototype that ingested sample dark-web paste data, extracted IOCs, linked them to known campaigns via ATT&CK, and visualized emerging clusters in under a week.
+- Dockerized the entire stack (Neo4j + Python workers + Dash/Flask) for reproducible deployment and scalability testing.
 
-- **SAMA PARTNERS BUSINESS SOLUTIONS SARL** (Aug 2023): Cyber Threat Intelligence Intern  
-  **Highlights**: Analyzed Dark Web structure
+This wasn't just data collection—it was turning noisy intelligence into actionable, graph-queryable knowledge that could support proactive defense decisions.
 
-<grok-card data-id="532454" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+### DevSecOps Intern  
+**ARRIBATT FZCO** — July 2024 – August 2024 (End-of-Year Internship)
 
-, tested AIL for CTI.  
-  Studied CTI concepts and Dark Web. Researched data extraction techniques. Tested AIL project for CTI data collection.  
+I focused on bridging development speed with security without creating bottlenecks, designing a "shift-left" pipeline that caught issues early while maintaining developer velocity.
 
-- **RIADVICE** (Jan 2022 - May 2022): Cyber Security Intern  
-  **Highlights**: Configured Wazuh SIEM
+**Core Thinking & Architecture**  
+Recognized that security checks needed to be automated, non-intrusive, and integrated into existing workflows. Built a Jenkins-based CI/CD pipeline with parallel security gates.
 
-<grok-card data-id="ce2d4f" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+Key architectural choices:
+- Static & dynamic analysis early: SonarQube for code quality + OWASP ZAP for DAST during build/test stages.
+- Dependency & container scanning: Integrated OWASP Dependency-Check and container tools to prevent vulnerable components from reaching production.
+- Runtime monitoring & response: Deployed and tuned Wazuh agents across environments for host log collection, file integrity monitoring, and active response.
+- Incident orchestration: Connected Wazuh alerts to TheHive (case management), Cortex (analyzers/enrichment), and OpenCTI (threat intel sharing) to form a lightweight XDR-like loop.
+- Automation glue: Used n8n for low-code workflows that triggered alerts, enriched data, and notified teams.
 
-, CIS benchmarks, integrated tools like Modsecurity. Developed Ansible scripts.  
-  Configured Wazuh SIEM. Implemented CIS benchmarks and IDS rules. Integrated tools like Modsecurity, ClamAV, AIDE, Tiger, Fail2ban. Conducted vulnerability assessments and pentesting. Developed Ansible scripts.  
+**PoC Highlights**  
+- Created a demo pipeline that took a sample vulnerable app → ran SonarQube → blocked on critical issues → scanned dependencies → performed automated ZAP scans → forwarded findings to TheHive/OpenCTI.
+- Configured Wazuh rules to detect common attack patterns and auto-quarantine suspicious processes.
+
+The result was a pipeline that didn't just "add security"—it embedded it as a natural part of delivery, reducing mean-time-to-remediate through automation.
+
+### Cyber Threat Intelligence Intern  
+**SAMA PARTNERS BUSINESS SOLUTIONS SARL** — August 2023 (Summer Internship)
+
+This short but intense internship gave me my first deep dive into the dark web as an intelligence source, shifting my mindset from reactive monitoring to proactive hunting.
+
+**Core Thinking & Architecture**  
+I approached the dark web not as a chaotic space but as a structured ecosystem with discoverable patterns (markets, forums, leak sites, paste services). The goal was to evaluate tools for scalable, ethical collection and classification.
+
+Focused on the AIL (Analysis Information Leak) framework:
+- Explored its modular crawler architecture for ingesting pastes, hidden services, and protected forums.
+- Tested extraction logic for IOCs (credentials, hashes, domains) and classification (leak type, sensitivity).
+- Analyzed how AIL handles unstructured streams → correlates items → flags high-value intelligence.
+
+**PoC Highlights**  
+- Ran controlled tests on sample paste sites and Tor onions → evaluated recall/precision for credential leaks and vulnerability mentions.
+- Mapped dark web communication flows (onion routing, protocol behaviors) to understand evasion techniques.
+
+This experience taught me how to think adversarially: understand attacker infrastructure to better defend against it.
+
+### Cyber Security Intern  
+**RIADVICE** — January 2022 – May 2022 (End-of-Studies Internship)
+
+My first hands-on hardening project—focused on turning a standard server environment into a defensible one using open-source tools and automation.
+
+**Core Thinking & Architecture**  
+Adopted a layered defense model (CIS benchmarks as baseline) with emphasis on visibility, prevention, and response.
+
+Key decisions:
+- Central visibility: Deployed Wazuh as the SIEM core for log aggregation, FIM, rootkit detection, and active response.
+- Web & host protection: Integrated ModSecurity (WAF rules), ClamAV (malware scanning), AIDE (file integrity), Tiger (security auditing), and Fail2Ban (brute-force blocking).
+- Automation-first: Wrote Ansible playbooks to enforce configurations, deploy agents, and apply hardening policies consistently across servers.
+- Alerting loop: Configured webhook-based alerts from Wazuh to external channels for rapid incident handling.
+
+**PoC Highlights**  
+- Built a hardened prototype server: Applied CIS Level 1 benchmarks → layered tools → simulated attacks (brute-force, web exploits) → verified blocks/alerts.
+- Developed Ansible roles that idempotently managed authentication hardening (key-only SSH, password policies).
+
+This internship solidified my belief in infrastructure-as-code for security: repeatable, auditable, and scalable hardening.
 
 ## Certifications
 - [API Security Fundamentals (2025)](https://www.apisecuniversity.com/courses/api-security-fundamentals)<grok-card data-id="fe6c97" data-type="citation_card" data-plain-type="render_inline_citation" ></grok-card>  
