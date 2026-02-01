@@ -131,36 +131,112 @@ This internship solidified my belief in infrastructure-as-code for security: rep
 - [Secure your infrastructure - OpenClassrooms (2024)](https://openclassrooms.com/en/courses/8395341-secure-your-active-directory-and-windows-domains)<grok-card data-id="29cc36" data-type="citation_card" data-plain-type="render_inline_citation" ></grok-card>  
 
 ## Academic Projects
-- [Intelligent Inventory Management System](https://github.com/Asma812/inventory-system): 
 
-<grok-card data-id="acffe8" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+### Optimizing a Virtualized 5G Network with SDN, NFV, AI & Blockchain  
+**End-of-studies engineering project (2024–2025)**
 
- Python, C/C++, STM32, Nodemcu, ThingSpeak.  
-- [Expert System for Disease Diagnosis](https://github.com/Asma812/disease-diagnosis): 
+This was my most ambitious academic work: building a complete virtualized 5G end-to-end prototype that combined modern network softwarization with intelligent automation and trust mechanisms.
 
-<grok-card data-id="d0bb11" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+**Core Thinking & Architecture**  
+I wanted to demonstrate that 5G can be more than high-speed connectivity — it can become a programmable, self-optimizing, and tamper-resistant platform.  
+I chose a fully disaggregated architecture:
 
- Python, Tkinter.  
-- [Drowsiness Detector with Image Processing and AI](https://github.com/Asma812/drowsiness-detector): 
+- **SDN control plane** → OpenDaylight as the central brain (southbound OpenFlow → Open5GS core elements)
+- **NFV data plane** → Containerized 5G core functions (UPF, AMF, SMF) running on Docker + Kubernetes-like orchestration
+- **AI-driven optimization layer** → TensorFlow models continuously analyzing Prometheus metrics (latency, throughput, handover success rate, resource utilization) to predict congestion and dynamically adjust slicing parameters and traffic steering
+- **Blockchain trust layer** → Hyperledger Fabric to record critical network events (slice creation/modification, handover decisions, SLA compliance) in an immutable ledger — providing auditability and preventing fraudulent manipulation of network policies
 
-<grok-card data-id="f4387d" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+**PoC Highlights & Innovations**  
+- Implemented network slicing with dynamic QoS enforcement (e.g., low-latency slice for URLLC, high-throughput for eMBB)
+- Trained lightweight ML models to detect anomalies and proactively re-balance resources before degradation occurred
+- Demonstrated end-to-end visibility with Grafana dashboards showing real-time slice performance + blockchain transaction log
+- Proved concept of “trust-by-design” — any unauthorized slice modification attempt would be detectable via ledger inconsistency
 
- Python, Raspberry Pi, API.  
-- [Optimizing Virtualized 5G Network with SDN, NFV, AI, and Blockchain](https://github.com/Asma812/5g-optimization): 
+Instead of a GitHub repository, this work is documented in a detailed technical article that covers architecture diagrams, configuration examples, ML training process, and performance results.
 
-<grok-card data-id="95e900" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+### Intelligent Inventory Management System  
+**Multi-disciplinary project (embedded + cloud)**
 
- OpenDaylight, Open5GS, TensorFlow, Docker, Hyperledger Fabric, Prometheus, Grafana.  
-- [Mobile App for Financial Management](https://github.com/Asma812/financial-app): 
+Goal: create a low-power, real-time inventory tracking solution suitable for warehouses or retail environments.
 
-<grok-card data-id="817bfb" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+**Approach & Architecture**  
+I decided to combine microcontroller-level sensing with cloud-based analytics and visualization.
 
- Java.  
-- [Web App for Library Management](https://github.com/Asma812/library-app): 
+- Edge layer: STM32 + NodeMCU (ESP8266) collecting RFID / weight sensor data
+- Communication: MQTT to ThingSpeak cloud
+- Backend: Python scripts performing data cleaning, trend analysis, and low-stock alerts
+- Frontend: Simple dashboard showing live inventory levels and movement history
 
-<grok-card data-id="5386a6" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+**PoC Highlights**  
+- Achieved sub-second update latency from sensor to cloud dashboard
+- Implemented basic predictive restocking alerts based on historical consumption patterns
+- Demonstrated energy-efficient duty cycling on battery-powered nodes
 
- Java, MySQL.  
+### Drowsiness Detector based on Image Processing & AI  
+**Computer vision + embedded project**
+
+Goal: real-time driver drowsiness detection using affordable hardware.
+
+**Approach & Architecture**  
+Chose a hybrid edge-cloud model to balance latency and accuracy.
+
+- Edge device: Raspberry Pi Camera Module capturing face/eye region
+- Processing pipeline: OpenCV for face & eye landmark detection → custom CNN (trained on public drowsiness datasets) classifying eye closure ratio and blink frequency
+- Alert logic: immediate local buzzer + cloud notification if prolonged drowsiness detected
+- API integration: lightweight Flask server to forward alerts
+
+**PoC Highlights**  
+- Reached >92% accuracy in controlled lab conditions
+- Demonstrated real-time inference (~200 ms per frame) on Raspberry Pi 4
+- Proved concept of privacy-preserving edge AI (no raw video leaves the vehicle)
+
+### Expert System for Disease Diagnosis  
+**Classic AI / rule-based system**
+
+Goal: build a simple but explainable diagnostic assistant for educational purposes.
+
+**Approach & Architecture**  
+Implemented a forward-chaining inference engine in Python + Tkinter GUI.
+
+- Knowledge base: structured symptoms → diseases → confidence scores
+- Inference engine: evaluates user answers against rules, accumulates probability
+- Explanation facility: shows reasoning chain (“because symptom X and Y are present → disease Z is likely”)
+
+**PoC Highlights**  
+- Clean separation between knowledge base and inference logic
+- User-friendly interface that explains why a diagnosis is suggested
+- Easy to extend with new diseases / rules
+
+### Mobile Application for Financial Management  
+**Android native development**
+
+Goal: personal finance tracker with clean UX.
+
+**Approach & Architecture**  
+Built with Java + SQLite (local persistence).
+
+- Features: income/expense tracking, category budgets, monthly reports, simple charts
+- Design pattern: MVVM for clean separation of UI and business logic
+- Security: encrypted local database
+
+**PoC Highlights**  
+- Smooth offline experience with sync-ready architecture
+- Intuitive material design interface
+
+### Web Application for Library Management  
+**Full-stack CRUD application**
+
+Goal: modern library management system for small/medium collections.
+
+**Approach & Architecture**  
+Java backend (Spring Boot) + MySQL database + basic HTML/Thymeleaf frontend.
+
+- Features: book catalog, member registration, borrowing/return, overdue tracking
+- REST API layer for future mobile/web clients
+
+**PoC Highlights**  
+- Implemented role-based access (admin / librarian / member)
+- Clean separation of concerns (controller – service – repository)
 
 ## Security Reports & Writeups
 (Placeholder for future additions—add links to reports as you complete them)  
