@@ -1,0 +1,23 @@
+title: Asma's Portfolio & Insights
+description: Telecommunications • Networks • Cybersecurity • AI Engineer | Articles on secure networks, 5G, threat detection & more
+author: Asma
+email: asmaneji20@gmail.com
+baseurl: "" # leave empty for root domain
+url: "https://yourusername.github.io" # change to your actual URL
+
+theme: minima  # built-in minimal theme (we'll use this for ultra-simple start)
+
+# Blog settings
+show_excerpts: true
+
+# Navigation (customize links)
+header_pages:
+  - index.md
+  - blog.md
+  - about.md
+  - contact.md
+
+# Social / Contact links (optional)
+social_links:
+  linkedin: asma-neji
+  github:  Asma812
