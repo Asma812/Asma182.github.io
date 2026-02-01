@@ -16,6 +16,7 @@ header_pages:
   - blog.md
   - about.md
   - contact.md
+  - telecom.md
 
 # Social links
 social_links:
