@@ -17,8 +17,8 @@ Passionate about integrating AI with cybersecurity in telecom environments, such
 → [Read all articles →](/blog)
 
 ### Featured Projects
-- [Cyber Threat Intelligence System with Neo4j & ML](https://github.com/Asma812/cti-system) — Designed a knowledge graph for threat analysis.
-- [DevSecOps Pipeline](https://github.com/Asma812/devsecops-pipeline) — Automated security with Jenkins, SonarQube, and OWASP ZAP.
+- [Cyber Threat Intelligence System with Neo4j & ML](https://github.com/Asma812/cti-system) — Designed and developed an AI-driven cyber threat intelligence platform.
+- [DevSecOps Pipeline](https://github.com/Asma812/devsecops-pipeline) — Configuring a DevSecOps platform to analyze and secure ERP solutions.
 - [5G Network Optimization with SDN, NFV, AI & Blockchain](https://github.com/Asma812/5g-optimization) — Virtualized network using OpenDaylight, TensorFlow, and more.
 
 [View all projects, certs, and experience in About →](/about)
