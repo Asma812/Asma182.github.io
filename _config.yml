@@ -1,23 +1,24 @@
-title: Asma's Portfolio & Insights
-description: Telecommunications • Networks • Cybersecurity • AI Engineer | Articles on secure networks, 5G, threat detection & more
-author: Asma
+title: Asma Neji - Junior Cybersecurity Engineer
+description: Specializing in telecommunications, networks, cybersecurity, and AI. Insights on threat intelligence, secure infrastructures, and AI-driven security.
+author: Asma Neji
 email: asmaneji20@gmail.com
-baseurl: "" # leave empty for root domain
-url: "https://yourusername.github.io" # change to your actual URL
+baseurl: ""
+url: "https://asma812.github.io"
 
-theme: minima  # built-in minimal theme (we'll use this for ultra-simple start)
+theme: minima  # Simple built-in theme; change to 'hacker' or others if desired
 
 # Blog settings
 show_excerpts: true
 
-# Navigation (customize links)
+# Navigation
 header_pages:
   - index.md
   - blog.md
   - about.md
   - contact.md
 
-# Social / Contact links (optional)
+# Social links
 social_links:
   linkedin: asma-neji
-  github:  Asma812
+  github: Asma812
+  phone: +216 97 322 007
