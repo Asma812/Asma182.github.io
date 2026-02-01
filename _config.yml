@@ -1,17 +1,16 @@
-remote_theme: mmistakes/minimal-mistakes@4.26.2  # Stable 2025–2026 version
+remote_theme: mmistakes/minimal-mistakes@4.26.2
 
 title: Asma Neji
-description: Junior Cybersecurity Engineer | Telecom, Networks, AI & Security
+description: Junior Cybersecurity Engineer | Telecom • Networks • AI • Security
 url: "https://asma812.github.io"
 baseurl: ""
 
-plugins:
-  - jekyll-include-cache
+minimal_mistakes_skin: "dark"  # Dark default (cyber feel). Change to "neon" or "default" for variety
 
 author:
   name: "Asma Neji"
-  avatar: "/assets/images/profile.jpg"  # Upload your photo to /assets/images/
-  bio: "Junior Cybersecurity Engineer specializing in threat intelligence, telecom security, AI-driven anomaly detection, and secure infrastructures."
+  avatar: "/assets/images/profile.jpg"  # Upload a professional/cyber-style photo
+  bio: "Junior Cybersecurity Engineer | Threat Intelligence • Telecom Security • AI Anomaly Detection • Pentesting"
   location: "Tunis, Tunisia"
   links:
     - label: "Email"
@@ -27,16 +26,20 @@ author:
       icon: "fas fa-fw fa-phone"
       url: "tel:+21697322007"
 
-minimal_mistakes_skin: "dark"  # Dark mode default (change to "default", "neon", "mint" later)
+plugins:
+  - jekyll-include-cache
+
 search: true
-search_full_content: true
 
 defaults:
   - scope:
       path: ""
     values:
       layout: single
-      author_profile: true  # Enables nice sidebar profile
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
 
 main:
   - title: "Home"
