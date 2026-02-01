@@ -1,25 +1,51 @@
-title: Asma Neji - Junior Cybersecurity Engineer
-description: Specializing in telecommunications, networks, cybersecurity, and AI. Insights on threat intelligence, secure infrastructures, and AI-driven security.
-author: Asma Neji
-email: asmaneji20@gmail.com
-baseurl: ""
+remote_theme: mmistakes/minimal-mistakes@4.26.2  # Stable 2025–2026 version
+
+title: Asma Neji
+description: Junior Cybersecurity Engineer | Telecom, Networks, AI & Security
 url: "https://asma812.github.io"
+baseurl: ""
 
-theme: minima  # Simple built-in theme; change to 'hacker' or others if desired
+plugins:
+  - jekyll-include-cache
 
-# Blog settings
-show_excerpts: true
+author:
+  name: "Asma Neji"
+  avatar: "/assets/images/profile.jpg"  # Upload your photo to /assets/images/
+  bio: "Junior Cybersecurity Engineer specializing in threat intelligence, telecom security, AI-driven anomaly detection, and secure infrastructures."
+  location: "Tunis, Tunisia"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:asmaneji20@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/asma-neji"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Asma812"
+    - label: "Phone"
+      icon: "fas fa-fw fa-phone"
+      url: "tel:+21697322007"
 
-# Navigation
-header_pages:
-  - index.md
-  - blog.md
-  - about.md
-  - contact.md
-  - telecom.md
+minimal_mistakes_skin: "dark"  # Dark mode default (change to "default", "neon", "mint" later)
+search: true
+search_full_content: true
 
-# Social links
-social_links:
-  linkedin: asma-neji
-  github: Asma812
-  phone: +216 97 322 007
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: true  # Enables nice sidebar profile
+
+main:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Telecom Lessons"
+    url: /telecom/
+  - title: "Blog"
+    url: /blog/
+  - title: "Contact"
+    url: /contact/
