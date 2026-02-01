@@ -1,0 +1,87 @@
+:root {
+  --bg: #0d1117;
+  --text: #c9d1d9;
+  --accent: #58a6ff;
+  --border: #30363d;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 0;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.8rem;
+}
+
+header nav a {
+  color: var(--text);
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header nav a:hover {
+  color: var(--accent);
+}
+
+main h1, main h2, main h3 {
+  font-family: 'JetBrains Mono', monospace;
+  color: #fff;
+}
+
+main a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+.notice, section {
+  background: #161b22;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.8rem;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+th {
+  background: #21262d;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: #8b949e;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+}
