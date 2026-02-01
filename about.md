@@ -48,12 +48,12 @@ Phone: +216 97 322 007
 - Secure your infrastructure - OpenClassrooms (2024)  
 
 ## Academic Projects
-- [Intelligent Inventory Management System](https://github.com/Asma812/inventory-system): Python, C/C++, STM32, Nodemcu, ThingSpeak.  
-- [Expert System for Disease Diagnosis](https://github.com/Asma812/disease-diagnosis): Python, Tkinter.  
+- [Intelligent Inventory Management System](https://github.com/Asma812/SmartInventory): Python, C/C++, STM32, Nodemcu, ThingSpeak.  
+- [Expert System for Disease Diagnosis](https://github.com/Asma812/Disease-Diagnosis): Python, Tkinter.  
 - [Drowsiness Detector with Image Processing and AI](https://github.com/Asma812/drowsiness-detector): Python, Raspberry Pi, API.  
 - [Optimizing Virtualized 5G Network with SDN, NFV, AI, and Blockchain](https://github.com/Asma812/5g-optimization): OpenDaylight, Open5GS, TensorFlow, Docker, Hyperledger Fabric, Prometheus, Grafana.  
-- [Mobile App for Financial Management](https://github.com/Asma812/financial-app): Java.  
-- [Web App for Library Management](https://github.com/Asma812/library-app): Java, MySQL.  
+- [Mobile App for Financial Management](https://github.com/Asma812/FinanceApp): Java.  
+- [Web App for Library Management](https://github.com/Asma812/Library-Management): Java, MySQL.  
 
 ## Languages
 - English, French, Arabic
