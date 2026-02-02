@@ -4,28 +4,47 @@ title: Welcome
 ---
 
 <!-- HERO SECTION -->
-<div style="text-align: center; padding: 6rem 1rem 4rem; background: linear-gradient(135deg, #0d1117 0%, #1a2639 100%); border-radius: 20px; margin: 1rem 1rem 4rem; box-shadow: 0 20px 60px rgba(88,166,255,0.3);">
-  <h1 style="color: #ffffff; font-size: 4.5rem; margin: 0; font-family: 'JetBrains Mono', monospace; letter-spacing: -3px; text-shadow: 0 0 60px #58a6ffaa;">Asma NEJI</h1>
-  <p style="color: #58a6ff; font-size: 2.2rem; margin: 1.5rem 0; font-weight: 700;">Junior Cybersecurity Engineer</p>
-  <p style="color: #a5d6ff; font-size: 1.5rem; margin: 1rem 0; max-width: 900px; margin-left: auto; margin-right: auto;">
-    Threat Intelligence • Telecom Security • AI Defense • Pentesting • DevSecOps
+<div style="text-align: center; padding: 6rem 1rem 4rem; background: linear-gradient(135deg, #0d1117 0%, #1a2639 100%);">
+  <h1 style="color: #ffffff; font-size: 4.5rem; margin: 0; font-family: 'JetBrains Mono', monospace; letter-spacing: -3px; text-shadow: 0 0 60px #58a6ffaa;">
+    Asma NEJI
+  </h1>
+
+  <p style="color: #58a6ff; font-size: 2.2rem; margin: 1.5rem 0; font-weight: 700;">
+    Junior Cybersecurity Engineer
   </p>
+
+  <p style="color: #a5d6ff; font-size: 1.5rem; margin: 1rem auto; max-width: 900px;">
+    Passionate Junior Cybersecurity Engineer from Tunis, blending deep telecommunications knowledge with cutting-edge security practices. Specialized in AI-powered threat detection, secure 5G architectures, DevSecOps automation, and proactive defense.
+  </p>
+
   <div style="margin-top: 3rem; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;">
     <span style="color: #c9d1d9; font-size: 1.3rem;">+216 97 322 007</span>
-    <a href="mailto:asmaneji20@gmail.com" style="color: #58a6ff; font-size: 1.3rem; text-decoration: none;">asmaneji20@gmail.com</a>
+    <a href="mailto:asmaneji20@gmail.com" style="color: #58a6ff; font-size: 1.3rem; text-decoration: none;">
+      asmaneji20@gmail.com
+    </a>
     <span style="color: #c9d1d9; font-size: 1.3rem;">Tunis, Tunisia</span>
   </div>
+
   <div style="margin-top: 4rem; display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap;">
-    <a href="https://linkedin.com/in/asma-neji" style="color: #ffffff; background: linear-gradient(90deg, #0a66c2, #1e88e5); padding: 1.1rem 2.8rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2rem; box-shadow: 0 12px 35px rgba(10,102,194,0.5); transition: all 0.4s;">LinkedIn</a>
-    <a href="https://github.com/Asma812" style="color: #ffffff; background: linear-gradient(90deg, #171515, #2e2e2e); padding: 1.1rem 2.8rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2rem; box-shadow: 0 12px 35px rgba(0,0,0,0.6); transition: all 0.4s;">GitHub</a>
-    <a href="/assets/cv/AsmaNEJI_CV.pdf" style="color: #ffffff; background: linear-gradient(90deg, #238636, #2ea043); padding: 1.1rem 2.8rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2rem; box-shadow: 0 12px 35px rgba(35,134,54,0.5); transition: all 0.4s;">Download CV</a>
+    <a href="https://linkedin.com/in/asma-neji"
+       style="color: #ffffff; background: linear-gradient(90deg, #0a66c2, #1e88e5); padding: 1.1rem 2.8rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2rem;">
+      LinkedIn
+    </a>
+
+    <a href="https://github.com/Asma812"
+       style="color: #ffffff; background: linear-gradient(90deg, #171515, #2e2e2e); padding: 1.1rem 2.8rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2rem;">
+      GitHub
+    </a>
+
+    <a href="/assets/cv/AsmaNEJI_CV.pdf"
+       style="color: #ffffff; background: linear-gradient(90deg, #238636, #2ea043); padding: 1.1rem 2.8rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2rem;">
+      Download CV
+    </a>
   </div>
 </div>
 
+
 <div class="container">
-{: .notice--info}
-## Short Bio
-Passionate Junior Cybersecurity Engineer from Tunis, blending deep telecommunications knowledge with cutting-edge security practices. Specialized in AI-powered threat detection, secure 5G architectures, DevSecOps automation, and proactive defense.
 
 {: .notice--success}
 ## Latest Articles
