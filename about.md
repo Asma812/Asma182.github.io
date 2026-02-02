@@ -4,24 +4,6 @@ title: About Me
 permalink: /about/
 ---
 
-<div style="text-align: center; padding: 5rem 1rem 4rem; background: linear-gradient(135deg, #0d1117 0%, #1a2639 100%); border-radius: 20px; margin: 0 1rem 3rem; box-shadow: 0 20px 60px rgba(88,166,255,0.3);">
-  <h1 style="color: #ffffff; font-size: 4.2rem; margin: 0; font-family: 'JetBrains Mono', monospace; letter-spacing: -3px; text-shadow: 0 0 50px #58a6ff99;">Asma NEJI</h1>
-  <p style="color: #58a6ff; font-size: 2.1rem; margin: 1.5rem 0; font-weight: 700;">Junior Cybersecurity Engineer</p>
-  <p style="color: #a5d6ff; font-size: 1.45rem; margin: 1rem 0; max-width: 1000px; margin-left: auto; margin-right: auto;">
-    Threat Intelligence • Telecom & Network Security • AI Anomaly Detection • Penetration Testing • DevSecOps
-  </p>
-  <div style="margin-top: 3rem; display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap;">
-    <span style="color: #c9d1d9; font-size: 1.25rem;">+216 97 322 007</span>
-    <a href="mailto:asmaneji20@gmail.com" style="color: #58a6ff; font-size: 1.25rem; text-decoration: none;">asmaneji20@gmail.com</a>
-    <span style="color: #c9d1d9; font-size: 1.25rem;">Tunis, Tunisia</span>
-  </div>
-  <div style="margin-top: 3.5rem; display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap;">
-    <a href="https://linkedin.com/in/asma-neji" style="color: #ffffff; background: linear-gradient(90deg, #0a66c2, #1e88e5); padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.15rem; box-shadow: 0 10px 30px rgba(10,102,194,0.5); transition: all 0.4s;">LinkedIn</a>
-    <a href="https://github.com/Asma812" style="color: #ffffff; background: linear-gradient(90deg, #171515, #2e2e2e); padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.15rem; box-shadow: 0 10px 30px rgba(0,0,0,0.6); transition: all 0.4s;">GitHub</a>
-    <a href="/assets/cv/AsmaNEJI_CV.pdf" style="color: #ffffff; background: linear-gradient(90deg, #238636, #2ea043); padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.15rem; box-shadow: 0 10px 30px rgba(35,134,54,0.5); transition: all 0.4s;">Download CV</a>
-  </div>
-</div>
-
 {: .notice--primary}
 
 ## Bio
