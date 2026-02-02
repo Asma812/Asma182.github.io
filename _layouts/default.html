@@ -44,6 +44,15 @@
     html.setAttribute('data-theme', savedTheme);
     document.body.classList.add(savedTheme);
 
+    // Show correct icon
+    if (savedTheme === 'light') {
+      document.querySelector('.icon-sun').style.opacity = '1';
+      document.querySelector('.icon-moon').style.opacity = '0.3';
+    } else {
+      document.querySelector('.icon-sun').style.opacity = '0.3';
+      document.querySelector('.icon-moon').style.opacity = '1';
+    }
+
     toggle.addEventListener('click', () => {
       const current = html.getAttribute('data-theme');
       const next = current === 'dark' ? 'light' : 'dark';
@@ -51,6 +60,15 @@
       html.setAttribute('data-theme', next);
       document.body.classList.remove(current);
       document.body.classList.add(next);
+
+      // Switch icon opacity
+      if (next === 'light') {
+        document.querySelector('.icon-sun').style.opacity = '1';
+        document.querySelector('.icon-moon').style.opacity = '0.3';
+      } else {
+        document.querySelector('.icon-sun').style.opacity = '0.3';
+        document.querySelector('.icon-moon').style.opacity = '1';
+      }
 
       localStorage.setItem('theme', next);
     });
