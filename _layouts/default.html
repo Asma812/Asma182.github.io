@@ -19,7 +19,10 @@
             <a href="{{ nav.url | relative_url }}">{{ nav.text }}</a>
           {% endfor %}
         </nav>
-        <button id="theme-toggle" aria-label="Toggle theme">Dark / Light</button>
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </button>
       </div>
     </div>
   </header>
@@ -37,20 +40,19 @@
     const html = document.documentElement;
 
     // Load saved theme or default to dark
-    if (localStorage.getItem('theme') === 'light') {
-      html.setAttribute('data-theme', 'light');
-    } else {
-      html.setAttribute('data-theme', 'dark');
-    }
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', savedTheme);
+    document.body.classList.add(savedTheme);
 
     toggle.addEventListener('click', () => {
-      if (html.getAttribute('data-theme') === 'dark') {
-        html.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light');
-      } else {
-        html.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-      }
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+
+      html.setAttribute('data-theme', next);
+      document.body.classList.remove(current);
+      document.body.classList.add(next);
+
+      localStorage.setItem('theme', next);
     });
   </script>
 </body>
