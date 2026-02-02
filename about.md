@@ -12,8 +12,8 @@ permalink: /about/
   [LinkedIn](https://linkedin.com/in/asma-neji) • [GitHub](https://github.com/Asma812) • [CV (PDF)](/assets/cv/AsmaNEJI_CV.pdf)
 </div>
 
-<div class="section-box">
   ## Bio
+<div class="section-box">
   Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, networks, and AI. Experienced in building secure systems, threat intelligence, and AI-driven anomaly detection. Based in Tunisia.
 </div>
 
