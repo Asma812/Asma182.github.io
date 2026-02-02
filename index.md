@@ -29,23 +29,6 @@ title: Asma Neji
 ## Short Bio
 Passionate Junior Cybersecurity Engineer from Tunis, blending deep telecommunications knowledge with cutting-edge security practices. Specialized in AI-powered threat detection, secure 5G architectures, DevSecOps automation, and proactive defense.
 
-{: .notice--primary}
-
-## Skills
-
-<div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 3rem 0;">
-  <span style="background: #21262d; color: #58a6ff; padding: 0.9rem 1.8rem; border-radius: 50px; font-size: 1.1rem; border: 1px solid #58a6ff44; transition: all 0.4s; box-shadow: 0 6px 20px rgba(88,166,255,0.3);">Cisco Packet Tracer</span>
-  <span style="background: #21262d; color: #58a6ff; padding: 0.9rem 1.8rem; border-radius: 50px; font-size: 1.1rem; border: 1px solid #58a6ff44; transition: all 0.4s; box-shadow: 0 6px 20px rgba(88,166,255,0.3);">Wireshark</span>
-  <span style="background: #21262d; color: #58a6ff; padding: 0.9rem 1.8rem; border-radius: 50px; font-size: 1.1rem; border: 1px solid #58a6ff44; transition: all 0.4s; box-shadow: 0 6px 20px rgba(88,166,255,0.3);">NS3</span>
-  <span style="background: #21262d; color: #58a6ff; padding: 0.9rem 1.8rem; border-radius: 50px; font-size: 1.1rem; border: 1px solid #58a6ff44; transition: all 0.4s; box-shadow: 0 6px 20px rgba(88,166,255,0.3);">Python</span>
-  <span style="background: #21262d; color: #58a6ff; padding: 0.9rem 1.8rem; border-radius: 50px; font-size: 1.1rem; border: 1px solid #58a6ff44; transition: all 0.4s; box-shadow: 0 6px 20px rgba(88,166,255,0.3);">Docker</span>
-  <span style="background: #21262d; color: #58a6ff; padding: 0.9rem 1.8rem; border-radius: 50px; font-size: 1.1rem; border: 1px solid #58a6ff44; transition: all 0.4s; box-shadow: 0 6px 20px rgba(88,166,255,0.3);">Ansible</span>
-  <span style="background: #21262d; color: #da3633; padding: 0.9rem 1.8rem; border-radius: 50px; font-size: 1.1rem; border: 1px solid #da363344; transition: all 0.4s; box-shadow: 0 6px 20px rgba(218,54,51,0.3);">Burp Suite</span>
-  <span style="background: #21262d; color: #da3633; padding: 0.9rem 1.8rem; border-radius: 50px; font-size: 1.1rem; border: 1px solid #da363344; transition: all 0.4s; box-shadow: 0 6px 20px rgba(218,54,51,0.3);">Nmap</span>
-  <span style="background: #21262d; color: #da3633; padding: 0.9rem 1.8rem; border-radius: 50px; font-size: 1.1rem; border: 1px solid #da363344; transition: all 0.4s; box-shadow: 0 6px 20px rgba(218,54,51,0.3);">OWASP ZAP</span>
-  <span style="background: #21262d; color: #da3633; padding: 0.9rem 1.8rem; border-radius: 50px; font-size: 1.1rem; border: 1px solid #da363344; transition: all 0.4s; box-shadow: 0 6px 20px rgba(218,54,51,0.3);">Metasploit</span>
-</div>
-
 {: .notice--success}
 
 ## Latest Articles
