@@ -6,7 +6,15 @@ url: "https://asma812.github.io"
 markdown: kramdown
 highlighter: rouge
 
-# Navigation (simple top bar like tags)
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
 navigation:
   - text: About
     url: /about/
@@ -16,13 +24,3 @@ navigation:
     url: /telecom/
   - text: Contact
     url: /contact/
-
-# Dark mode default
-sass:
-  style: compressed
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
