@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-<div style="text-align: center; padding: 6rem 1rem 4rem; background: linear-gradient(135deg, #0d1117 0%, #1a2639 50%, #2a1a3d 100%); border-radius: 20px; margin: 0 1rem 3rem; box-shadow: 0 20px 60px rgba(88,166,255,0.3);">
+<div style="text-align: center; padding: 5rem 1rem 4rem; background: linear-gradient(135deg, #0d1117 0%, #1a2639 100%); border-radius: 20px; margin: 0 1rem 3rem; box-shadow: 0 20px 60px rgba(88,166,255,0.3);">
   <h1 style="color: #ffffff; font-size: 4.2rem; margin: 0; font-family: 'JetBrains Mono', monospace; letter-spacing: -3px; text-shadow: 0 0 50px #58a6ff99;">Asma NEJI</h1>
   <p style="color: #58a6ff; font-size: 2.1rem; margin: 1.5rem 0; font-weight: 700;">Junior Cybersecurity Engineer</p>
   <p style="color: #a5d6ff; font-size: 1.45rem; margin: 1rem 0; max-width: 1000px; margin-left: auto; margin-right: auto;">
@@ -259,7 +259,7 @@ Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, n
   </div>
 </details>
 
-<details style="margin: 2.5rem 0; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 50px rgba(88,166,255,0.3); transition: all 0.5s;">
+<details style="margin: 2.5rem 0; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 50px rgba(88,166,255,0.35); transition: all 0.5s;">
   <summary style="font-size: 1.55rem; color: #58a6ff; background: linear-gradient(to right, #21262d, #2d3748); padding: 1.8rem 2.8rem; cursor: pointer; font-weight: 700; list-style: none; transition: background 0.4s, transform 0.3s;">
     Expert System for Disease Diagnosis
   </summary>
@@ -282,7 +282,7 @@ Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, n
   </div>
 </details>
 
-<details style="margin: 2.5rem 0; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 50px rgba(35,134,54,0.3); transition: all 0.5s;">
+<details style="margin: 2.5rem 0; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 50px rgba(35,134,54,0.35); transition: all 0.5s;">
   <summary style="font-size: 1.55rem; color: #238636; background: linear-gradient(to right, #21262d, #2d3748); padding: 1.8rem 2.8rem; cursor: pointer; font-weight: 700; list-style: none; transition: background 0.4s, transform 0.3s;">
     Mobile Application for Financial Management
   </summary>
@@ -304,7 +304,7 @@ Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, n
   </div>
 </details>
 
-<details style="margin: 2.5rem 0; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 50px rgba(160,32,240,0.3); transition: all 0.5s;">
+<details style="margin: 2.5rem 0; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 50px rgba(160,32,240,0.35); transition: all 0.5s;">
   <summary style="font-size: 1.55rem; color: #a020f0; background: linear-gradient(to right, #21262d, #2d3748); padding: 1.8rem 2.8rem; cursor: pointer; font-weight: 700; list-style: none; transition: background 0.4s, transform 0.3s;">
     Web Application for Library Management
   </summary>
