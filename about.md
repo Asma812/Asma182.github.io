@@ -4,17 +4,17 @@ title: About Me
 permalink: /about/
 ---
 
-<div style="text-align: center; margin-bottom: 3rem;">
-  <h1 style="color: #ffffff; font-family: 'JetBrains Mono', monospace; margin-bottom: 0.5rem;">Asma NEJI</h1>
-  <p style="color: #58a6ff; font-size: 1.2rem; margin: 0.5rem 0;">Junior Cybersecurity Engineer</p>
-  <p style="color: #8b949e; margin: 0.5rem 0;">
+<div style="text-align: center; padding: 3rem 1rem; background: linear-gradient(to bottom, #0d1117, #161b22); border-radius: 12px; margin-bottom: 2rem;">
+  <h1 style="color: #ffffff; font-size: 2.8rem; margin: 0; font-family: 'JetBrains Mono', monospace;">Asma NEJI</h1>
+  <p style="color: #58a6ff; font-size: 1.4rem; margin: 0.8rem 0;">Junior Cybersecurity Engineer</p>
+  <p style="color: #8b949e; font-size: 1.1rem; margin: 0.5rem 0;">
     +216 97 322 007 • asmaneji20@gmail.com • Tunis, Tunisia
   </p>
-  <p style="margin: 1rem 0;">
-    <a href="https://linkedin.com/in/asma-neji" style="color: #58a6ff; margin: 0 1rem;">LinkedIn</a> •
-    <a href="https://github.com/Asma812" style="color: #58a6ff; margin: 0 1rem;">GitHub</a> •
-    <a href="/assets/cv/AsmaNEJI_CV.pdf" style="color: #58a6ff; margin: 0 1rem;">Download CV (PDF)</a>
-  </p>
+  <div style="margin-top: 1.5rem;">
+    <a href="https://linkedin.com/in/asma-neji" style="color: #58a6ff; margin: 0 1.2rem; font-weight: 500;">LinkedIn</a> •
+    <a href="https://github.com/Asma812" style="color: #58a6ff; margin: 0 1.2rem; font-weight: 500;">GitHub</a> •
+    <a href="/assets/cv/AsmaNEJI_CV.pdf" style="color: #58a6ff; margin: 0 1.2rem; font-weight: 500;">Download CV</a>
+  </div>
 </div>
 
 {: .notice--primary}
@@ -58,113 +58,109 @@ Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, n
 
 ## Professional Experience
 
-<details>
-  <summary>
-    <strong>Cyber Threat Intelligence Intern</strong> — TUDIGISEC by Nomios  
-    <small>February 2025 – June 2025</small>  
-    <br><small>Neo4j • ML/Graph Algorithms • MITRE ATT&CK • NLP/Transformers • Dash • Flask • Docker</small>
+<details open style="margin-bottom: 1.5rem;">
+  <summary style="font-size: 1.3rem; color: #ffffff; cursor: pointer; padding: 1rem; background: #21262d; border-radius: 8px 8px 0 0; font-family: 'JetBrains Mono', monospace;">
+    Cyber Threat Intelligence Intern – TUDIGISEC by Nomios (Feb 2025 – Jun 2025)
   </summary>
+  <div style="padding: 1.5rem; background: #161b22; border: 1px solid #30363d; border-top: none; border-radius: 0 0 8px 8px;">
+    I took ownership of designing a full Cyber Threat Intelligence (CTI) system from the ground up, treating the organization’s scattered threat data sources as a disconnected puzzle that needed unification.
 
-  I took ownership of designing a full Cyber Threat Intelligence (CTI) system from the ground up, treating the organization’s scattered threat data sources as a disconnected puzzle that needed unification.
+    **Core Thinking & Architecture**  
+    I chose Neo4j as the central knowledge graph engine because traditional relational databases struggle with the highly relational nature of threat actors, campaigns, indicators, and infrastructure. The graph model allowed me to naturally represent attacker TTPs, victim assets, and enrichment sources as interconnected nodes and relationships.
 
-  **Core Thinking & Architecture**  
-  I chose Neo4j as the central knowledge graph engine because traditional relational databases struggle with the highly relational nature of threat actors, campaigns, indicators, and infrastructure. The graph model allowed me to naturally represent attacker TTPs, victim assets, and enrichment sources as interconnected nodes and relationships.
+    The architecture followed a modular ingestion → processing → analysis → visualization pipeline:
+    - Multi-source ingestion: Social media streams, OSINT feeds, internal honeypots, and curated dark web datasets.
+    - Entity extraction layer: Custom regex + NLP pipelines (transformers for named entity recognition) to turn unstructured text into structured triples.
+    - Semantic enrichment: Mapped everything to MITRE ATT&CK framework using graph patterns to link tactics, techniques, and procedures across sources.
+    - Anomaly & trend detection: Combined graph algorithms (PageRank for influential actors, community detection for campaign clustering) with lightweight ML models for outlier scoring.
+    - Output layer: Real-time dashboard (Dash) for interactive exploration + Flask API for programmatic access and STIX 2.1 export.
 
-  The architecture followed a modular ingestion → processing → analysis → visualization pipeline:
-  - Multi-source ingestion: Social media streams, OSINT feeds, internal honeypots, and curated dark web datasets.
-  - Entity extraction layer: Custom regex + NLP pipelines (transformers for named entity recognition) to turn unstructured text into structured triples.
-  - Semantic enrichment: Mapped everything to MITRE ATT&CK framework using graph patterns to link tactics, techniques, and procedures across sources.
-  - Anomaly & trend detection: Combined graph algorithms (PageRank for influential actors, community detection for campaign clustering) with lightweight ML models for outlier scoring.
-  - Output layer: Real-time dashboard (Dash) for interactive exploration + Flask API for programmatic access and STIX 2.1 export.
+    **PoC Highlights**  
+    - Built a prototype that ingested sample dark-web paste data, extracted IOCs, linked them to known campaigns via ATT&CK, and visualized emerging clusters in under a week.
+    - Dockerized the entire stack (Neo4j + Python workers + Dash/Flask) for reproducible deployment and scalability testing.
 
-  **PoC Highlights**  
-  - Built a prototype that ingested sample dark-web paste data, extracted IOCs, linked them to known campaigns via ATT&CK, and visualized emerging clusters in under a week.
-  - Dockerized the entire stack (Neo4j + Python workers + Dash/Flask) for reproducible deployment and scalability testing.
+    This wasn't just data collection—it was turning noisy intelligence into actionable, graph-queryable knowledge that could support proactive defense decisions.
 
-  This wasn't just data collection—it was turning noisy intelligence into actionable, graph-queryable knowledge that could support proactive defense decisions.
-
-  [View Project on GitHub](https://github.com/Asma812/cti-tudigisec) <!-- replace with real link -->
+    [View Project on GitHub](https://github.com/Asma812/cti-tudigisec) <!-- Replace with real link -->
+  </div>
 </details>
 
-<details>
-  <summary>
-    <strong>DevSecOps Intern</strong> — ARRIBATT FZCO  
-    <small>July 2024 – August 2024</small>  
-    <br><small>Jenkins • SonarQube • OWASP ZAP • n8n • Wazuh • TheHive • Cortex • OpenCTI • Nmap</small>
+<details style="margin-bottom: 1.5rem;">
+  <summary style="font-size: 1.3rem; color: #ffffff; cursor: pointer; padding: 1rem; background: #21262d; border-radius: 8px 8px 0 0; font-family: 'JetBrains Mono', monospace;">
+    DevSecOps Intern – ARRIBATT FZCO (Jul 2024 – Aug 2024)
   </summary>
+  <div style="padding: 1.5rem; background: #161b22; border: 1px solid #30363d; border-top: none; border-radius: 0 0 8px 8px;">
+    I focused on bridging development speed with security without creating bottlenecks, designing a "shift-left" pipeline that caught issues early while maintaining developer velocity.
 
-  I focused on bridging development speed with security without creating bottlenecks, designing a "shift-left" pipeline that caught issues early while maintaining developer velocity.
+    **Core Thinking & Architecture**  
+    Recognized that security checks needed to be automated, non-intrusive, and integrated into existing workflows. Built a Jenkins-based CI/CD pipeline with parallel security gates.
 
-  **Core Thinking & Architecture**  
-  Recognized that security checks needed to be automated, non-intrusive, and integrated into existing workflows. Built a Jenkins-based CI/CD pipeline with parallel security gates.
+    Key architectural choices:
+    - Static & dynamic analysis early: SonarQube for code quality + OWASP ZAP for DAST during build/test stages.
+    - Dependency & container scanning: Integrated OWASP Dependency-Check and container tools to prevent vulnerable components from reaching production.
+    - Runtime monitoring & response: Deployed and tuned Wazuh agents across environments for host log collection, file integrity monitoring, and active response.
+    - Incident orchestration: Connected Wazuh alerts to TheHive (case management), Cortex (analyzers/enrichment), and OpenCTI (threat intel sharing) to form a lightweight XDR-like loop.
+    - Automation glue: Used n8n for low-code workflows that triggered alerts, enriched data, and notified teams.
 
-  Key architectural choices:
-  - Static & dynamic analysis early: SonarQube for code quality + OWASP ZAP for DAST during build/test stages.
-  - Dependency & container scanning: Integrated OWASP Dependency-Check and container tools to prevent vulnerable components from reaching production.
-  - Runtime monitoring & response: Deployed and tuned Wazuh agents across environments for host log collection, file integrity monitoring, and active response.
-  - Incident orchestration: Connected Wazuh alerts to TheHive (case management), Cortex (analyzers/enrichment), and OpenCTI (threat intel sharing) to form a lightweight XDR-like loop.
-  - Automation glue: Used n8n for low-code workflows that triggered alerts, enriched data, and notified teams.
+    **PoC Highlights**  
+    - Created a demo pipeline that took a sample vulnerable app → ran SonarQube → blocked on critical issues → scanned dependencies → performed automated ZAP scans → forwarded findings to TheHive/OpenCTI.
+    - Configured Wazuh rules to detect common attack patterns and auto-quarantine suspicious processes.
 
-  **PoC Highlights**  
-  - Created a demo pipeline that took a sample vulnerable app → ran SonarQube → blocked on critical issues → scanned dependencies → performed automated ZAP scans → forwarded findings to TheHive/OpenCTI.
-  - Configured Wazuh rules to detect common attack patterns and auto-quarantine suspicious processes.
+    The result was a pipeline that didn't just "add security"—it embedded it as a natural part of delivery, reducing mean-time-to-remediate through automation.
 
-  The result was a pipeline that didn't just "add security"—it embedded it as a natural part of delivery, reducing mean-time-to-remediate through automation.
-
-  [View Project on GitHub](https://github.com/Asma812/devsecops-arribatt) <!-- replace with real link -->
+    [View Project on GitHub](https://github.com/Asma812/devsecops-arribatt) <!-- Replace with real link -->
+  </div>
 </details>
 
-<details>
-  <summary>
-    <strong>Cyber Threat Intelligence Intern</strong> — SAMA PARTNERS BUSINESS SOLUTIONS SARL  
-    <small>August 2023</small>  
-    <br><small>AIL framework • Dark Web analysis tools</small>
+<details style="margin-bottom: 1.5rem;">
+  <summary style="font-size: 1.3rem; color: #ffffff; cursor: pointer; padding: 1rem; background: #21262d; border-radius: 8px 8px 0 0; font-family: 'JetBrains Mono', monospace;">
+    Cyber Threat Intelligence Intern – SAMA PARTNERS BUSINESS SOLUTIONS SARL (Aug 2023)
   </summary>
+  <div style="padding: 1.5rem; background: #161b22; border: 1px solid #30363d; border-top: none; border-radius: 0 0 8px 8px;">
+    This short but intense internship gave me my first deep dive into the dark web as an intelligence source, shifting my mindset from reactive monitoring to proactive hunting.
 
-  This short but intense internship gave me my first deep dive into the dark web as an intelligence source, shifting my mindset from reactive monitoring to proactive hunting.
+    **Core Thinking & Architecture**  
+    I approached the dark web not as a chaotic space but as a structured ecosystem with discoverable patterns (markets, forums, leak sites, paste services). The goal was to evaluate tools for scalable, ethical collection and classification.
 
-  **Core Thinking & Architecture**  
-  I approached the dark web not as a chaotic space but as a structured ecosystem with discoverable patterns (markets, forums, leak sites, paste services). The goal was to evaluate tools for scalable, ethical collection and classification.
+    Focused on the AIL (Analysis Information Leak) framework:
+    - Explored its modular crawler architecture for ingesting pastes, hidden services, and protected forums.
+    - Tested extraction logic for IOCs (credentials, hashes, domains) and classification (leak type, sensitivity).
+    - Analyzed how AIL handles unstructured streams → correlates items → flags high-value intelligence.
 
-  Focused on the AIL (Analysis Information Leak) framework:
-  - Explored its modular crawler architecture for ingesting pastes, hidden services, and protected forums.
-  - Tested extraction logic for IOCs (credentials, hashes, domains) and classification (leak type, sensitivity).
-  - Analyzed how AIL handles unstructured streams → correlates items → flags high-value intelligence.
+    **PoC Highlights**  
+    - Ran controlled tests on sample paste sites and Tor onions → evaluated recall/precision for credential leaks and vulnerability mentions.
+    - Mapped dark web communication flows (onion routing, protocol behaviors) to understand evasion techniques.
 
-  **PoC Highlights**  
-  - Ran controlled tests on sample paste sites and Tor onions → evaluated recall/precision for credential leaks and vulnerability mentions.
-  - Mapped dark web communication flows (onion routing, protocol behaviors) to understand evasion techniques.
+    This experience taught me how to think adversarially: understand attacker infrastructure to better defend against it.
 
-  This experience taught me how to think adversarially: understand attacker infrastructure to better defend against it.
-
-  [View Project on GitHub](https://github.com/Asma812/cti-sama) <!-- replace with real link -->
+    [View Project on GitHub](https://github.com/Asma812/cti-sama) <!-- Replace with real link -->
+  </div>
 </details>
 
-<details>
-  <summary>
-    <strong>Cyber Security Intern</strong> — RIADVICE  
-    <small>January 2022 – May 2022</small>  
-    <br><small>Wazuh • ModSecurity • ClamAV • AIDE • Tiger • Fail2Ban • Ansible</small>
+<details style="margin-bottom: 1.5rem;">
+  <summary style="font-size: 1.3rem; color: #ffffff; cursor: pointer; padding: 1rem; background: #21262d; border-radius: 8px 8px 0 0; font-family: 'JetBrains Mono', monospace;">
+    Cyber Security Intern – RIADVICE (Jan 2022 – May 2022)
   </summary>
+  <div style="padding: 1.5rem; background: #161b22; border: 1px solid #30363d; border-top: none; border-radius: 0 0 8px 8px;">
+    My first hands-on hardening project—focused on turning a standard server environment into a defensible one using open-source tools and automation.
 
-  My first hands-on hardening project—focused on turning a standard server environment into a defensible one using open-source tools and automation.
+    **Core Thinking & Architecture**  
+    Adopted a layered defense model (CIS benchmarks as baseline) with emphasis on visibility, prevention, and response.
 
-  **Core Thinking & Architecture**  
-  Adopted a layered defense model (CIS benchmarks as baseline) with emphasis on visibility, prevention, and response.
+    Key decisions:
+    - Central visibility: Deployed Wazuh as the SIEM core for log aggregation, FIM, rootkit detection, and active response.
+    - Web & host protection: Integrated ModSecurity (WAF rules), ClamAV (malware scanning), AIDE (file integrity), Tiger (security auditing), and Fail2Ban (brute-force blocking).
+    - Automation-first: Wrote Ansible playbooks to enforce configurations, deploy agents, and apply hardening policies consistently across servers.
+    - Alerting loop: Configured webhook-based alerts from Wazuh to external channels for rapid incident handling.
 
-  Key decisions:
-  - Central visibility: Deployed Wazuh as the SIEM core for log aggregation, FIM, rootkit detection, and active response.
-  - Web & host protection: Integrated ModSecurity (WAF rules), ClamAV (malware scanning), AIDE (file integrity), Tiger (security auditing), and Fail2Ban (brute-force blocking).
-  - Automation-first: Wrote Ansible playbooks to enforce configurations, deploy agents, and apply hardening policies consistently across servers.
-  - Alerting loop: Configured webhook-based alerts from Wazuh to external channels for rapid incident handling.
+    **PoC Highlights**  
+    - Built a hardened prototype server: Applied CIS Level 1 benchmarks → layered tools → simulated attacks (brute-force, web exploits) → verified blocks/alerts.
+    - Developed Ansible roles that idempotently managed authentication hardening (key-only SSH, password policies).
 
-  **PoC Highlights**  
-  - Built a hardened prototype server: Applied CIS Level 1 benchmarks → layered tools → simulated attacks (brute-force, web exploits) → verified blocks/alerts.
-  - Developed Ansible roles that idempotently managed authentication hardening (key-only SSH, password policies).
+    This internship solidified my belief in infrastructure-as-code for security: repeatable, auditable, and scalable hardening.
 
-  This internship solidified my belief in infrastructure-as-code for security: repeatable, auditable, and scalable hardening.
-
-  [GitHub Repo](https://github.com/Asma812/hardening-riadvice) <!-- replace with real link -->
+    [View Project on GitHub](https://github.com/Asma812/hardening-riadvice) <!-- Replace with real link -->
+  </div>
 </details>
 
 {: .notice--success}
@@ -184,10 +180,7 @@ Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, n
 ## Academic Projects
 
 <details>
-  <summary>
-    Optimizing a Virtualized 5G Network with SDN, NFV, AI & Blockchain  
-    Tools: OpenDaylight, Open5GS, TensorFlow, Docker, Hyperledger Fabric, Prometheus, Grafana
-  </summary>
+  <summary>Optimizing a Virtualized 5G Network with SDN, NFV, AI & Blockchain – Tools: OpenDaylight, Open5GS, TensorFlow, Docker, Hyperledger Fabric, Prometheus, Grafana</summary>
 
   **End-of-studies engineering project (2024–2025)**  
   This was my most ambitious academic work: building a complete virtualized 5G end-to-end prototype that combined modern network softwarization with intelligent automation and trust mechanisms.
@@ -209,14 +202,11 @@ Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, n
 
   Instead of a GitHub repository, this work is documented in a detailed technical article that covers architecture diagrams, configuration examples, ML training process, and performance results.
 
-  [GitHub Repo](https://github.com/Asma812/5g-optimization) <!-- replace with real link -->
+  [View Project on GitHub](https://github.com/Asma812/5g-optimization) <!-- Replace with real link -->
 </details>
 
 <details>
-  <summary>
-    Intelligent Inventory Management System  
-    Tools: Python, C/C++, STM32, Nodemcu, ThingSpeak
-  </summary>
+  <summary>Intelligent Inventory Management System – Tools: Python, C/C++, STM32, Nodemcu, ThingSpeak</summary>
 
   **Multi-disciplinary project (embedded + cloud)**  
   Goal: create a low-power, real-time inventory tracking solution suitable for warehouses or retail environments.
@@ -233,7 +223,7 @@ Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, n
   - Implemented basic predictive restocking alerts based on historical consumption patterns
   - Demonstrated energy-efficient duty cycling on battery-powered nodes
 
-  [GitHub Repo](https://github.com/Asma812/inventory-system) <!-- replace with real link -->
+  [View Project on GitHub](https://github.com/Asma812/inventory-system) <!-- Replace with real link -->
 </details>
 
 <details>
