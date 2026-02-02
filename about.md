@@ -1,55 +1,47 @@
 ---
-layout: single
-title: "About Me"
-permalink: /about/
-author_profile: true
-header:
-  overlay_color: "#0a0a0a"
-  overlay_filter: "0.6"
-  overlay_image: /assets/images/cyber-bg.jpg  # Upload a dark abstract cyber/network image (e.g., blue neon circuits or code rain)
-  caption: "Securing the Future • One Network at a Time"
+layout: default
+title: About Me
 ---
 
-[View CV]({{ site.baseurl }}/assets/cv/AsmaNEJI_CV.pdf) | [Download CV]({{ site.baseurl }}/assets/cv/AsmaNEJI_CV.pdf)
+# Asma Neji  
+**Junior Cybersecurity Engineer**  
++216 97 322 007 • asmaneji20@gmail.com • Tunis, Tunisia  
+
+[LinkedIn](https://linkedin.com/in/asma-neji) • [GitHub](https://github.com/Asma812) • [CV (PDF)](/assets/cv/AsmaNEJI_CV.pdf)
 
 ## Bio
-{: .notice--primary}
-
 Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, networks, and AI. Experienced in building secure systems, threat intelligence, and AI-driven anomaly detection. Based in Tunisia.
 
-LinkedIn: [linkedin.com/in/asma-neji](https://linkedin.com/in/asma-neji)  
-GitHub: [github.com/Asma812](https://github.com/Asma812)  
-Email: asmaneji20@gmail.com  
-Phone: +216 97 322 007  
-
-[View CV]({{ site.baseurl }}/assets/cv/AsmaNEJI_CV.pdf) | [Download CV]({{ site.baseurl }}/assets/cv/AsmaNEJI_CV.pdf) (right-click > save as)
-
 ## Skills
-{: .notice--info}
+**Networking**  
+Cisco Packet Tracer, Huawei eNSP, TCPDump, OpenVPN, NS3, Omnet++, Wireshark, OpenSSL  
 
-| Category | Key Skills |
-|-------------------|----------------------------------------------------------------------------|
-| Networking | Cisco Packet Tracer, Huawei eNSP, TCPDump, OpenVPN, NS3, Omnet++, Wireshark, OpenSSL |
-| Systems | Linux (Ubuntu, Kali), Windows Server |
-| Languages | Python, Bash/Shell, SQL, C, C++, Java |
-| DevOps | Ansible, Shell Scripting, Docker, SonarQube, Jenkins |
+**Systems**  
+Linux (Ubuntu, Kali), Windows Server  
 
-**Security Skills**  
-- Threat intelligence  
-- Pentesting: Nmap, Burp Suite, OWASP ZAP, Metasploit, Nessus/OpenVAS  
-- Network security  
-- Infrastructure hardening  
-- Security automation  
-- Incident response  
-- Bug Bounty: Burp Suite, OWASP ZAP, Amass, Gobuster, Postman for APIs
+**Languages**  
+Python, Bash/Shell, SQL, C, C++, Java  
+
+**DevOps**  
+Ansible, Shell Scripting, Docker, SonarQube, Jenkins  
+
+**Security**  
+Threat intelligence  
+Pentesting: Nmap, Burp Suite, OWASP ZAP, Metasploit, Nessus/OpenVAS  
+Network security  
+Infrastructure hardening  
+Security automation  
+Incident response  
+Bug Bounty: Burp Suite, OWASP ZAP, Amass, Gobuster, Postman for APIs  
 
 ## Education
-{: .notice--success}
+**2022-2025**  
+Higher Institute of Computer Science, Tunisia  
+Engineering in Computer Science, Engineering and Development of Communications Infrastructures and Services  
 
-- **2022-2025**: Higher Institute of Computer Science, Tunisia  
-  Engineering in Computer Science, Engineering and Development of Communications Infrastructures and Services  
-- **2019-2022**: Higher Institute of Information and Communication Technologies, Tunisia  
-  Bachelor in Information and Communication Technologies, Telecommunications
+**2019-2022**  
+Higher Institute of Information and Communication Technologies, Tunisia  
+Bachelor in Information and Communication Technologies, Telecommunications  
 
 ## Professional Experience
 {: .notice--warning}
