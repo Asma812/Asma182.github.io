@@ -38,10 +38,11 @@ title: Welcome
   </div>
 </div>
 
-<div class="container">
+<div class="container" markdown="1">
 
-{: .notice--success}
 ## Latest Articles
+{: .notice--success}
+
 {% for post in site.posts limit:5 %}
 <div style="margin: 2rem 0; padding: 1.5rem; background: #161b22; border-radius: 12px; border-left: 4px solid #58a6ff; transition: all 0.3s; box-shadow: 0 4px 15px rgba(88,166,255,0.1);">
   <h3 style="margin: 0 0 0.5rem 0; color: #58a6ff;">
@@ -50,38 +51,45 @@ title: Welcome
   <p style="color: #8b949e; font-size: 0.95rem; margin: 0.5rem 0;">
     {{ post.date | date: "%B %d, %Y" }} • {{ post.categories | join: " • " }}
   </p>
-  <p style="margin: 1rem 0 0 0; color: #c9d1d9;">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+  <p style="margin: 1rem 0 0 0; color: #c9d1d9;">
+    {{ post.excerpt | strip_html | truncate: 160 }}
+  </p>
 </div>
 {% endfor %}
+
 <div style="text-align: center; margin: 3rem 0;">
-  <a href="/blog" style="color: #58a6ff; font-size: 1.3rem; font-weight: 600; text-decoration: none;">View All Articles →</a>
+  <a href="/blog" style="color: #58a6ff; font-size: 1.3rem; font-weight: 600; text-decoration: none;">
+    View All Articles →
+  </a>
 </div>
 
-{: .notice--info}
 ## Featured Projects
+{: .notice--info}
+
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin: 3rem 0;">
-  <div style="background: #161b22; border-radius: 16px; padding: 2rem; border: 1px solid #30363d; box-shadow: 0 10px 30px rgba(88,166,255,0.2); transition: all 0.4s;">
-    <h3 style="color: #58a6ff; margin-top: 0;">Cyber Threat Intelligence Platform</h3>
-    <p style="color: #c9d1d9; margin: 1rem 0;">Neo4j knowledge graph • ML anomaly detection • MITRE ATT&CK • Dash/Flask • Docker</p>
-    <a href="/about/#professional-experience" style="color: #58a6ff; font-weight: 600;">View Details →</a>
+  <div style="background: #161b22; border-radius: 16px; padding: 2rem; border: 1px solid #30363d;">
+    <h3 style="color: #58a6ff;">Cyber Threat Intelligence Platform</h3>
+    <p style="color: #c9d1d9;">Neo4j • ML • MITRE ATT&CK • Docker</p>
+    <a href="/about/#professional-experience">View Details →</a>
   </div>
-  <div style="background: #161b22; border-radius: 16px; padding: 2rem; border: 1px solid #30363d; box-shadow: 0 10px 30px rgba(35,134,54,0.2); transition: all 0.4s;">
-    <h3 style="color: #238636; margin-top: 0;">DevSecOps Pipeline & XDR</h3>
-    <p style="color: #c9d1d9; margin: 1rem 0;">Jenkins • SonarQube • OWASP ZAP • Wazuh • TheHive • OpenCTI</p>
-    <a href="/about/#professional-experience" style="color: #238636; font-weight: 600;">View Details →</a>
+
+  <div style="background: #161b22; border-radius: 16px; padding: 2rem; border: 1px solid #30363d;">
+    <h3 style="color: #238636;">DevSecOps Pipeline & XDR</h3>
+    <p style="color: #c9d1d9;">Jenkins • SonarQube • Wazuh • OpenCTI</p>
+    <a href="/about/#professional-experience">View Details →</a>
   </div>
-  <div style="background: #161b22; border-radius: 16px; padding: 2rem; border: 1px solid #30363d; box-shadow: 0 10px 30px rgba(0,212,255,0.2); transition: all 0.4s;">
-    <h3 style="color: #00d4ff; margin-top: 0;">Virtualized 5G Network Optimization</h3>
-    <p style="color: #c9d1d9; margin: 1rem 0;">SDN • NFV • AI • Blockchain • OpenDaylight • Open5GS • TensorFlow</p>
-    <a href="/about/#academic-projects" style="color: #00d4ff; font-weight: 600;">View Details →</a>
+
+  <div style="background: #161b22; border-radius: 16px; padding: 2rem; border: 1px solid #30363d;">
+    <h3 style="color: #00d4ff;">Virtualized 5G Network Optimization</h3>
+    <p style="color: #c9d1d9;">SDN • NFV • AI • Open5GS</p>
+    <a href="/about/#academic-projects">View Details →</a>
   </div>
-</div>
-<div style="text-align: center; margin: 4rem 0;">
-  <a href="/about" style="color: #58a6ff; font-size: 1.4rem; font-weight: 600; text-decoration: none;">See Full Portfolio →</a>
 </div>
 
 ### Telecom Background
-Explore my academic journey in telecom engineering: [Telecom Lessons →](/telecom)
+Explore my academic journey in telecom engineering:  
+[Telecom Lessons →](/telecom)
 
 [Get in touch](/contact)
+
 </div>
