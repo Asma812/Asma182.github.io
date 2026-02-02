@@ -80,18 +80,31 @@ header nav a:hover {
   color: var(--accent);
 }
 
+/* Theme Toggle Button */
 #theme-toggle {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text);
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
   cursor: pointer;
-  font-size: 0.9rem;
+  padding: 0.5rem;
+  color: var(--text);
+  transition: transform 0.2s;
 }
 
 #theme-toggle:hover {
-  background: var(--border);
+  transform: scale(1.15);
+}
+
+.icon-sun, .icon-moon {
+  transition: opacity 0.3s;
+}
+
+[data-theme="dark"] .icon-sun {
+  opacity: 0.3;
+}
+
+[data-theme="light"] .icon-moon {
+  opacity: 0.3;
 }
 
 main {
@@ -163,21 +176,3 @@ footer {
   font-size: 0.9rem;
   border-top: 1px solid var(--border);
 }
-
-/* Notice classes (for boxed sections) */
-.notice {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 1.5rem;
-  margin: 1.5rem 0;
-  box-shadow: var(--shadow);
-}
-
-.notice--primary   { border-left: 4px solid #58a6ff; }
-.notice--info      { border-left: 4px solid #1f6feb; }
-.notice--success   { border-left: 4px solid #238636; }
-.notice--warning   { border-left: 4px solid #bb8009; }
-.notice--danger    { border-left: 4px solid #da3633; }
-.notice--secondary { border-left: 4px solid #444d56; }
-.notice--default   { border-left: 4px solid #6e7681; }
