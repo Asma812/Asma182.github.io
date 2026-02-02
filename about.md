@@ -210,7 +210,8 @@ Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, n
 
 <details style="margin: 2.5rem 0; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 50px rgba(0,212,255,0.35); transition: all 0.5s;">
   <summary style="font-size: 1.55rem; color: #00d4ff; background: linear-gradient(to right, #21262d, #2d3748); padding: 1.8rem 2.8rem; cursor: pointer; font-weight: 700; list-style: none; transition: background 0.4s, transform 0.3s;">
-    Optimizing a Virtualized 5G Network with SDN, NFV, AI & Blockchain
+    Optimizing a Virtualized 5G Network with SDN, NFV, AI & Blockchain  
+    Tools: OpenDaylight, Open5GS, TensorFlow, Docker, Hyperledger Fabric, Prometheus, Grafana
   </summary>
   <div style="background: #161b22; padding: 2.8rem; border-top: 1px solid #30363d; transition: all 0.4s;">
     **End-of-studies engineering project (2024–2025)**  
@@ -239,7 +240,8 @@ Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, n
 
 <details style="margin: 2.5rem 0; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 50px rgba(35,134,54,0.35); transition: all 0.5s;">
   <summary style="font-size: 1.55rem; color: #238636; background: linear-gradient(to right, #21262d, #2d3748); padding: 1.8rem 2.8rem; cursor: pointer; font-weight: 700; list-style: none; transition: background 0.4s, transform 0.3s;">
-    Intelligent Inventory Management System
+    Intelligent Inventory Management System  
+    Tools: Python, C/C++, STM32, NodeMCU, ThingSpeak
   </summary>
   <div style="background: #161b22; padding: 2.8rem; border-top: 1px solid #30363d; transition: all 0.4s;">
     **Multi-disciplinary project (embedded + cloud)**  
@@ -263,7 +265,8 @@ Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, n
 
 <details style="margin: 2.5rem 0; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 50px rgba(160,32,240,0.35); transition: all 0.5s;">
   <summary style="font-size: 1.55rem; color: #a020f0; background: linear-gradient(to right, #21262d, #2d3748); padding: 1.8rem 2.8rem; cursor: pointer; font-weight: 700; list-style: none; transition: background 0.4s, transform 0.3s;">
-    Drowsiness Detector based on Image Processing & AI
+    Drowsiness Detector based on Image Processing & AI  
+    Tools: Python, Raspberry Pi, OpenCV, custom CNN, Flask
   </summary>
   <div style="background: #161b22; padding: 2.8rem; border-top: 1px solid #30363d; transition: all 0.4s;">
     **Computer vision + embedded project**  
@@ -287,7 +290,8 @@ Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, n
 
 <details style="margin: 2.5rem 0; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 50px rgba(88,166,255,0.35); transition: all 0.5s;">
   <summary style="font-size: 1.55rem; color: #58a6ff; background: linear-gradient(to right, #21262d, #2d3748); padding: 1.8rem 2.8rem; cursor: pointer; font-weight: 700; list-style: none; transition: background 0.4s, transform 0.3s;">
-    Expert System for Disease Diagnosis
+    Expert System for Disease Diagnosis  
+    Tools: Python, Tkinter
   </summary>
   <div style="background: #161b22; padding: 2.8rem; border-top: 1px solid #30363d; transition: all 0.4s;">
     **Classic AI / rule-based system**  
@@ -310,7 +314,8 @@ Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, n
 
 <details style="margin: 2.5rem 0; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 50px rgba(35,134,54,0.35); transition: all 0.5s;">
   <summary style="font-size: 1.55rem; color: #238636; background: linear-gradient(to right, #21262d, #2d3748); padding: 1.8rem 2.8rem; cursor: pointer; font-weight: 700; list-style: none; transition: background 0.4s, transform 0.3s;">
-    Mobile Application for Financial Management
+    Mobile Application for Financial Management  
+    Tools: Java
   </summary>
   <div style="background: #161b22; padding: 2.8rem; border-top: 1px solid #30363d; transition: all 0.4s;">
     **Android native development**  
@@ -332,7 +337,8 @@ Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, n
 
 <details style="margin: 2.5rem 0; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 50px rgba(160,32,240,0.35); transition: all 0.5s;">
   <summary style="font-size: 1.55rem; color: #a020f0; background: linear-gradient(to right, #21262d, #2d3748); padding: 1.8rem 2.8rem; cursor: pointer; font-weight: 700; list-style: none; transition: background 0.4s, transform 0.3s;">
-    Web Application for Library Management
+    Web Application for Library Management  
+    Tools: Java, MySQL, Spring Boot, Thymeleaf
   </summary>
   <div style="background: #161b22; padding: 2.8rem; border-top: 1px solid #30363d; transition: all 0.4s;">
     **Full-stack CRUD application**  
@@ -352,14 +358,6 @@ Asma Neji, Junior Cybersecurity Engineer with expertise in telecommunications, n
 </details>
 
 {: .notice--secondary}
-
-## Security Reports & Writeups
-(Placeholder for future additions—add links to reports as you complete them)  
-- Bug Bounty Report Example: [Link to report/writeup]  
-- Pentest Report Example: [Link to report/writeup]  
-- Hardening Project: [Link to writeup]
-
-{: .notice--default}
 
 ## Languages
 English, French, Arabic
