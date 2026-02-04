@@ -1,22 +1,23 @@
 ---
 layout: page
-title: Lesson 8: Telephony & VoIP
+title: Lesson 8: Satellite Communications
 permalink: /lesson8/
 ---
-Voice communication systems.
+Advanced optional topic.
 
 **Key Concepts:**
-- PSTN, SS7
-- SIP, RTP
-- VoIP architecture, Softswitches
+- GEO / MEO / LEO
+- Link budget
+- VSAT
+- Satellite internet (e.g., Starlink)
 
-**Why It Matters:** Still foundational for voice services in modern networks.
+**Why It Matters:** Powerful for global connectivity.
 
-**Labs/Practice:** Set up VoIP calls; analyzed SIP packets.
+**Labs/Practice:** Calculated link budgets; simulated satellite links.
 
-**Tools Used:** Wireshark, OpenVPN.
+**Tools Used:** MATLAB, NS3.
 
-# Lesson 8: Satellite Communications (Optional but Powerful)
+# Lesson 8: Satellite Communications 
 
 Satellite communications is a high-growth niche in telecommunications, especially with the rise of LEO mega-constellations like Starlink, Amazon Kuiper, and OneWeb. It enables global broadband, backhaul for 5G, direct-to-device connectivity, maritime/aviation comms, and integration with NTN (Non-Terrestrial Networks) in 5G/6G standards.
 
