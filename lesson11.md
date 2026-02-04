@@ -1,24 +1,20 @@
 ---
 layout: page
-title: Lesson 11: Telecom Security
+title: Lesson 11: Practical Projects
 permalink: /lesson11/
 ---
-Blending security with telecom.
+Hands-on applications.
 
 **Key Concepts:**
-- SS7 vulnerabilities
-- LTE/5G security
-- IMS security
-- SIM authentication
-- Network monitoring
-- IDS/IPS for telecom
-- Lawful interception
+- Beginner: Simulate QPSK vs QAM BER, Build VoIP system, Wireshark SIP/RTP analysis
+- Intermediate: LTE simulation, srsRAN + Open5GS lab, Network monitoring
+- Advanced: 5G deployment, Telecom attack simulation, Secure VoIP
 
-**Why It Matters:** Your cybersecurity background makes you unique—telecom + security is in-demand.
+**Why It Matters:** Demonstrates real-world application.
 
-**Labs/Practice:** Simulated SS7 attacks; hardened telecom networks.
+**Labs/Practice:** Built projects like 5G optimization (from your CV).
 
-**Tools Used:** Wireshark, OpenSSL, Ansible.
+**Tools Used:** MATLAB, Open5GS, Wireshark.
 
 # Lesson 11: Practical Projects 
 
