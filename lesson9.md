@@ -1,21 +1,19 @@
 ---
 layout: page
-title: Lesson 9: Satellite Communications
+title: Lesson 9: Programming for Telecom Engineers
 permalink: /lesson9/
 ---
-Advanced optional topic.
+Coding skills applied to telecom.
 
 **Key Concepts:**
-- GEO / MEO / LEO
-- Link budget
-- VSAT
-- Satellite internet (e.g., Starlink)
+- Languages: Python, C/C++, Bash
+- Use cases: Network automation, Log analysis, Performance testing, Protocol simulation
 
-**Why It Matters:** Powerful for global connectivity.
+**Why It Matters:** Automates and optimizes telecom tasks.
 
-**Labs/Practice:** Calculated link budgets; simulated satellite links.
+**Labs/Practice:** Scripted network simulations; analyzed logs.
 
-**Tools Used:** MATLAB, NS3.
+**Tools Used:** Python, Bash, C++.
 
 # Lesson 9: Programming for Telecom Engineers
 
