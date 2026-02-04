@@ -16,109 +16,65 @@ Core of mobile telecom.
 
 **Tools Used:** Open5GS, srsRAN, NS3.
 
-## Lesson 8: Telephony & VoIP
-Voice communication systems.
+# Lesson 7: Telephony & VoIP
 
-**Key Concepts:**
-- PSTN, SS7
-- SIP, RTP
-- VoIP architecture, Softswitches
+This lesson covers the world of **voice services** — still one of the most revenue-critical parts of telecom networks in 2026.  
+Even with messaging apps dominating daily use, operators continue to earn significant revenue from voice minutes (especially international roaming, enterprise PBX, contact centers, and emerging markets).  
 
-**Why It Matters:** Still foundational for voice services in modern networks.
+VoIP (Voice over IP) has completely replaced traditional circuit-switched telephony in modern networks:  
+- 4G → **VoLTE**  
+- 5G → **VoNR**  
+- Fixed networks → **IMS-based VoIP**
 
-**Labs/Practice:** Set up VoIP calls; analyzed SIP packets.
+Understanding both legacy PSTN/SS7 and modern all-IP voice architectures is essential for telecom engineers, especially in core network, IMS, VoIP engineering, and telecom security roles.
 
-**Tools Used:** Wireshark, OpenVPN.
+## Why Telephony & VoIP Still Matter
 
-## Lesson 9: Satellite Communications
-Advanced optional topic.
+- Major revenue stream for many mobile operators  
+- VoLTE / VoNR is now mandatory on almost all smartphones  
+- Enterprise UCaaS, SIP trunking, cloud PBX market is growing rapidly  
+- SS7 and Diameter/HTTP/2 signaling remain major attack surfaces (telecom security specialization)  
+- Voice is just another “application” running over 5G Core + IMS
 
-**Key Concepts:**
-- GEO / MEO / LEO
-- Link budget
-- VSAT
-- Satellite internet (e.g., Starlink)
+## 1. Legacy Telephony – PSTN & SS7
 
-**Why It Matters:** Powerful for global connectivity.
+**PSTN (Public Switched Telephone Network)**  
+- Circuit-switched: dedicated 64 kbps channel (DS0) end-to-end for each call  
+- TDM hierarchy: E1 (30 channels), T1 (24 channels), SDH/SONET for aggregation  
+- Switches: Class 4 (transit), Class 5 (local)  
+- Signaling: mostly out-of-band via SS7
 
-**Labs/Practice:** Calculated link budgets; simulated satellite links.
+**SS7 (Signaling System No. 7)**  
+The global out-of-band signaling network used for:  
+- Call setup / teardown  
+- SMS delivery  
+- Roaming (MAP)  
+- Number portability  
+- Supplementary services (call forwarding, barring, etc.)
 
-**Tools Used:** MATLAB, NS3.
+**SS7 architecture components**  
+- SSP (Service Switching Point) — telephone exchange  
+- STP (Signal Transfer Point) — SS7 router  
+- SCP (Service Control Point) — intelligent database (prepaid, freephone)
 
-## Lesson 10: Programming for Telecom Engineers
-Coding skills applied to telecom.
+**Protocol stack**  
+MTP → SCCP → TCAP → MAP / ISUP / CAMEL / INAP
 
-**Key Concepts:**
-- Languages: Python, C/C++, Bash
-- Use cases: Network automation, Log analysis, Performance testing, Protocol simulation
+**Critical issue in 2025–2026**  
+SS7 was designed in the 1970s–80s with almost no authentication → still widely exploited for:  
+- Location tracking  
+- Call & SMS interception  
+- Fraud (Wangiri, IRSF, premium-rate scams)
 
-**Why It Matters:** Automates and optimizes telecom tasks.
+## 2. VoIP & Modern All-IP Voice
 
-**Labs/Practice:** Scripted network simulations; analyzed logs.
+**Core idea**  
+Analog voice → digitized → compressed (G.711, G.729, AMR-WB, Opus) → packetized → sent over IP/UDP
 
-**Tools Used:** Python, Bash, C++.
+**Main protocols**
 
-## Lesson 11: Telecom Security (Your Big Plus)
-Blending security with telecom.
+### SIP (Session Initiation Protocol) – RFC 3261
+- HTTP-like text-based signaling protocol  
+- Responsibilities: registration, session setup, modification, termination
 
-**Key Concepts:**
-- SS7 vulnerabilities
-- LTE/5G security
-- IMS security
-- SIM authentication
-- Network monitoring
-- IDS/IPS for telecom
-- Lawful interception
-
-**Why It Matters:** Your cybersecurity background makes you unique—telecom + security is in-demand.
-
-**Labs/Practice:** Simulated SS7 attacks; hardened telecom networks.
-
-**Tools Used:** Wireshark, OpenSSL, Ansible.
-
-## Lesson 12: Practical Projects (Very Important)
-Hands-on applications.
-
-**Key Concepts:**
-- Beginner: Simulate QPSK vs QAM BER, Build VoIP system, Wireshark SIP/RTP analysis
-- Intermediate: LTE simulation, srsRAN + Open5GS lab, Network monitoring
-- Advanced: 5G deployment, Telecom attack simulation, Secure VoIP
-
-**Why It Matters:** Demonstrates real-world application.
-
-**Labs/Practice:** Built projects like 5G optimization (from your CV).
-
-**Tools Used:** MATLAB, Open5GS, Wireshark.
-
-## Lesson 13: Certifications (Optional but Helpful)
-Credentials to boost credibility.
-
-**Key Concepts:**
-- CCNA / CCNP
-- Nokia / Huawei telecom courses
-- 5G certifications
-- Linux certifications
-
-**Why It Matters:** Validates skills for jobs.
-
-**Labs/Practice:** Pursued CCNA (from your CV).
-
-**Tools Used:** Cisco Packet Tracer.
-
-## Lesson 14: Career Paths in Telecom
-Future opportunities.
-
-**Key Concepts:**
-- Radio Network Engineer
-- Core Network Engineer
-- Transmission Engineer
-- VoIP Engineer
-- 5G Engineer
-- Telecom Security Engineer
-- Network Architect
-
-**Why It Matters:** Guides your career with your telecom + cyber skills.
-
-**Labs/Practice:** Internships aligned with these paths (e.g., threat intel in telecom contexts).
-
-This section ties directly to my projects and skills—check [About](/about) for more.
+**Typical SIP flow (simplified)**  
