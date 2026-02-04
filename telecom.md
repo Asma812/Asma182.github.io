@@ -37,7 +37,7 @@ Preview of lessons from my telecom studies. Click a card to view full content.
 
   
 - **[Lesson 6: Cellular Networks](/lesson6)**: 2G-5G architecture, MIMO.
-- 
+ 
 <grok-card data-id="b346b3" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="SMALL" ></grok-card>
 
   
