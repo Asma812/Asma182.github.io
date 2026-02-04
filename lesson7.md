@@ -78,3 +78,69 @@ Analog voice → digitized → compressed (G.711, G.729, AMR-WB, Opus) → packe
 - Responsibilities: registration, session setup, modification, termination
 
 **Typical SIP flow (simplified)**  
+UE ── REGISTER ──→ P-CSCF ──→ S-CSCF ──→ HSS/UDM
+UE ◄─ 200 OK (with service route) ────┘
+UE ── INVITE ──→ P-CSCF ──→ I-CSCF ──→ S-CSCF ──→ ... terminating side
+
+
+Common methods: REGISTER, INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE (SMS over IP)
+
+### RTP (Real-time Transport Protocol) – RFC 3550
+- Carries the actual media (voice / video)  
+- Runs over UDP (low latency, no retransmission)  
+- Fields: sequence number, timestamp, SSRC, payload type  
+- Companion: **RTCP** (provides QoS feedback: jitter, packet loss, delay)
+
+### SRTP (Secure RTP)
+- Mandatory in VoLTE / VoNR  
+- Adds encryption + authentication to RTP packets
+
+## 3. IMS (IP Multimedia Subsystem) Architecture
+
+Standardized framework (3GPP) for delivering multimedia services over all-IP networks.  
+Used for VoLTE, VoNR, RCS, fixed VoIP.
+
+**Key IMS network functions**
+
+- **P-CSCF** (Proxy-CSCF): first contact point, SIP compression, QoS policing  
+- **I-CSCF** (Interrogating-CSCF): routes based on HSS/UDM lookup  
+- **S-CSCF** (Serving-CSCF): main session control, service logic, charging  
+- **HSS / UDM**: subscriber database & authentication  
+- **TAS** (Telephony Application Server): call forwarding, conferencing, ringback tones  
+- **MGCF / IM-MGW**: PSTN gateway (SIP ↔ ISUP translation)
+
+**Simplified VoLTE call flow (high-level)**  
+1. UE registers → IMS (AKA authentication)  
+2. INVITE sent → routed through P/I/S-CSCF  
+3. SDP negotiation (codecs, ports)  
+4. 183 Session Progress / 180 Ringing  
+5. 200 OK (answer) → ACK  
+6. Bidirectional RTP/SRTP media  
+7. BYE to end session
+
+## 4. Modern Trends (2025–2026)
+
+- **Cloud-native IMS**: Kubernetes-based, microservices (Nokia, Mavenir, Ericsson, Huawei)  
+- **WebRTC**: browser-native voice/video (used in many UC platforms)  
+- **RCS (Rich Communication Services)**: advanced messaging + voice/video over IMS  
+- **5G VoNR**: native voice over 5G NR (lower latency than VoLTE)
+
+## Practice & Portfolio Suggestions
+
+- Set up **Asterisk** or **FreeSWITCH** PBX → make calls between softphones (Linphone / MicroSIP)  
+- Capture & analyze real traffic with **Wireshark** (filter: `sip` or `rtp`)  
+- Document: REGISTER flow, INVITE with SDP, jitter/buffer behavior  
+- Bonus (advanced): integrate with Open5GS + srsRAN for private VoLTE lab
+
+## Summary – Key Takeaways for Interviews
+
+- PSTN = circuit-switched → VoIP = packet-switched (delay vs reliability trade-off)  
+- SIP = signaling, RTP = media, SRTP = security  
+- IMS = standardized VoIP/IMS architecture in mobile networks  
+- SS7 vulnerabilities remain relevant (telecom security angle)
+
+This knowledge directly connects to:  
+- Telecom security (SS7/Diameter attacks)  
+- Core network engineering  
+- VoIP / IMS engineering roles  
+- Practical projects (Wireshark analysis, private VoIP lab)
