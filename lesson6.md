@@ -1,20 +1,20 @@
 ---
 layout: page
-title: Lesson 6: Networking (Telecom ≠ Only RF)
+title: Lesson 6: Cellular Networks
 permalink: /lesson6/
 ---
-Integrating telecom with broader networks.
+Core of mobile telecom.
 
 **Key Concepts:**
-- OSI & TCP/IP: Physical to Application layer, IP, TCP, UDP, DNS, DHCP, NAT
-- Routing & Switching: Ethernet, VLAN, STP, OSPF, BGP
-- Wireless Networks: Wi-Fi (802.11 a/b/g/n/ac/ax), Cellular architecture
+- Evolution: 2G (GSM), 3G (UMTS), 4G (LTE), 5G (NR)
+- Architecture: RAN, Core Network, IMS, EPC, 5G Core (AMF, SMF, UPF)
+- Concepts: Handover, Roaming, QoS, Network slicing, Massive MIMO, Beamforming
 
-**Why It Matters:** Telecom engineers need networking for end-to-end systems.
+**Why It Matters:** Vital for careers in telecom operators.
 
-**Labs/Practice:** Configured VLANs and routing; analyzed Wi-Fi traffic.
+**Labs/Practice:** Simulated LTE/5G handovers; deployed virtual 5G cores.
 
-**Tools Used:** Cisco Packet Tracer, GNS3, Wireshark.
+**Tools Used:** Open5GS, srsRAN, NS3.
 
 # Lesson 6: Cellular Networks (CRITICAL)
 
