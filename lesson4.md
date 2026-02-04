@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lesson 5: Transmission Media & RF Basics
+title: Lesson 4: Transmission Media & RF Basics
 permalink: /lesson4/
 ---
 How signals physically travel.
