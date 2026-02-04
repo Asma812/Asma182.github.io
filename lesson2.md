@@ -84,6 +84,15 @@ h(t) tells you "how the system rings" after a sharp impulse.
 - Multipath channel impulse response: multiple delayed copies → causes ISI  
   → solved by OFDM or adaptive equalizers
 
+**Example: Impulse response of a simple RC low-pass filter** (exponential decay — classic "memory" of the filter)
+
+![RC Low-Pass Filter Impulse Response](https://www.etti.unibw.de/labalive/experiment/lti/lti-system-response-for-cosine-wave.png)  
+*(Exponential decay curve showing how the filter responds to an impulse)*
+
+Another view — step response of RC low-pass (shows smoothing effect):
+
+![RC Low-Pass Filter Step Response](https://imagedelivery.net/EzErua5FfjxwIvZXiki_dA/7844d9b4-0deb-479f-c078-4f03e663a500/1024pxwide)
+
 ## 4. Sampling Theorem (Nyquist-Shannon) — The Most Important Rule in Digital Telecom
 
 **Theorem**  
@@ -99,6 +108,15 @@ perfectly reconstructs the original signal (using ideal sinc interpolation).
 
 - Audio: human hearing ~20 kHz → CD uses 44.1 kHz  
 - 5G baseband: channels up to 100–400 MHz → sampling rates in Gsamples/s in high-end radios
+
+**Visual: Proper sampling vs aliasing** (sine wave example)
+
+![Nyquist-Shannon Sampling Theorem Illustration](https://miro.medium.com/v2/resize:fit:2000/1*WDxtduQB2iQqdGM9HNvScA.png)  
+*Left: Proper sampling (fₛ > 2×f_max) reconstructs perfectly. Right: Undersampling causes aliasing.*
+
+Another clear aliasing demo:
+
+![Aliasing Effect on Sine Wave](https://kistler.cdn.celum.cloud/SAPCommerce_FullSize_1200x1200/kistler_aliasing-effect_21952-5849.webp)
 
 ## 5. Aliasing — The Enemy You Must Understand
 
@@ -125,7 +143,13 @@ Filters remove unwanted frequencies.
 | High-Pass (HPF)   | Above cutoff               | Below cutoff                | Remove DC offset, low-frequency noise         |
 | Band-Pass (BPF)   | Between f₁ and f₂          | Outside the band            | Channel selection in receiver                 |
 
-**Digital filters** (FIR / IIR) implemented in baseband processing.
+**Example frequency responses** (magnitude and phase for Butterworth-style filters)
+
+![Low-Pass Filter Frequency Response](https://i0.wp.com/foxmusicproduction.com/wp-content/uploads/2024/07/Audio-EQ-What-Is-A-Low-Pass-Filter-How-Do-LPFs-Work.jpg?fit=900%2C506&ssl=1)  
+*(Typical LPF roll-off at -3 dB cutoff)*
+
+![High-Pass Filter Frequency Response](https://cdn.shopify.com/s/files/1/0086/4891/7097/files/image006_216e70f2-f544-4642-a63a-a8b5a2b9d087.png?10353)  
+*(HPF example — passes high frequencies)*
 
 ## 7. Analog-to-Digital & Digital-to-Analog Conversion (ADC / DAC)
 
@@ -143,6 +167,15 @@ Filters remove unwanted frequencies.
 - Quantization noise (increases with fewer bits)  
 - Aperture jitter (critical at high sampling rates)  
 - Dynamic range requirements → 12–16 bit ADCs common in base stations
+
+**Block diagram of ADC process** (with anti-aliasing filter highlighted)
+
+![ADC Block Diagram](https://image2.slideserve.com/4460391/analog-to-digital-conversion-l.jpg)  
+*Anti-aliasing filter → Sample & Hold → Quantizer*
+
+Another overview:
+
+![ADC and DAC Process](https://i.ytimg.com/vi/plLDN3mFY24/maxresdefault.jpg)
 
 ## Tools to Start Using Right Now
 
