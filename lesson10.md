@@ -1,20 +1,24 @@
 ---
 layout: page
-title: Lesson 10: Programming for Telecom Engineers
+title: Lesson 10: Telecom Security
 permalink: /lesson10/
 ---
-Coding skills applied to telecom.
+Blending security with telecom.
 
 **Key Concepts:**
-- Languages: Python, C/C++, Bash
-- Use cases: Network automation, Log analysis, Performance testing, Protocol simulation
+- SS7 vulnerabilities
+- LTE/5G security
+- IMS security
+- SIM authentication
+- Network monitoring
+- IDS/IPS for telecom
+- Lawful interception
 
-**Why It Matters:** Automates and optimizes telecom tasks.
+**Why It Matters:** Your cybersecurity background makes you unique—telecom + security is in-demand.
 
-**Labs/Practice:** Scripted network simulations; analyzed logs.
+**Labs/Practice:** Simulated SS7 attacks; hardened telecom networks.
 
-**Tools Used:** Python, Bash, C++.
-
+**Tools Used:** Wireshark, OpenSSL, Ansible.
 # Lesson 10: Telecom Security – Your BIG PLUS 🔐
 
 **The rare & high-demand combination: Deep telecom knowledge + Security expertise**
