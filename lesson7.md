@@ -1,20 +1,20 @@
 ---
 layout: page
-title: Lesson 7: Cellular Networks (Critical)
+title: Lesson 7: Telephony & VoIP
 permalink: /lesson7/
 ---
-Core of mobile telecom.
+Voice communication systems.
 
 **Key Concepts:**
-- Evolution: 2G (GSM), 3G (UMTS), 4G (LTE), 5G (NR)
-- Architecture: RAN, Core Network, IMS, EPC, 5G Core (AMF, SMF, UPF)
-- Concepts: Handover, Roaming, QoS, Network slicing, Massive MIMO, Beamforming
+- PSTN, SS7
+- SIP, RTP
+- VoIP architecture, Softswitches
 
-**Why It Matters:** Vital for careers in telecom operators.
+**Why It Matters:** Still foundational for voice services in modern networks.
 
-**Labs/Practice:** Simulated LTE/5G handovers; deployed virtual 5G cores.
+**Labs/Practice:** Set up VoIP calls; analyzed SIP packets.
 
-**Tools Used:** Open5GS, srsRAN, NS3.
+**Tools Used:** Wireshark, OpenVPN.
 
 # Lesson 7: Telephony & VoIP
 
