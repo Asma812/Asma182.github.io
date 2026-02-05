@@ -5,50 +5,49 @@ title: Welcome
 
 <div class="container" markdown="1">
 
-<!-- HERO SECTION -->
-<div style="text-align: center; padding: 4rem 1rem 3rem; max-width: 1000px; margin: 0 auto;">
-  <h1 style="font-family: 'JetBrains Mono', monospace; font-size: 3.2rem; margin: 0 0 0.6rem; color: var(--text); letter-spacing: -1px;">
+<!-- HERO – Ultra-Compact, One-Screen-Fit, Professional -->
+<div style="text-align: center; padding: 4rem 1rem 3rem; max-width: 900px; margin: 0 auto;">
+  <h1 style="font-family: 'JetBrains Mono', monospace; font-size: 3rem; margin: 0 0 0.5rem; color: var(--text); letter-spacing: -1px;">
     Asma NEJI
   </h1>
 
-  <!-- Cybersecurity trick: dig + traceroute style + 3-line intro -->
-  <div style="margin: 1.8rem auto; max-width: 780px;">
-    <pre style="background: #0a0e14; color: #00b894; font-family: 'JetBrains Mono', monospace; padding: 1.3rem; border-radius: 10px; border: 1px solid #21262d; font-size: 0.98rem; line-height: 1.55; text-align: left; overflow-x: auto;">
-dig asma.neji +short
-  185.199.108.153   ; github.io edge
-
-traceroute asma.neji
-  1  192.168.1.1     0.8 ms
-  2  isp-gateway      4.2 ms
-  3  te Tunis node    12 ms
-  4  global backbone  28 ms
-  5  github edge      42 ms
-
-Junior Cybersecurity Engineer
-Threat Intelligence • Telecom Security • AI Defense • Pentesting • DevSecOps
-Secure the signal. Defend the spectrum.
+  <!-- Cybersecurity trick: Leaked data warning simulation -->
+  <div style="margin: 1.5rem auto; max-width: 720px;">
+    <pre style="background: #0a0e14; color: #e63946; font-family: 'JetBrains Mono', monospace; padding: 1.2rem; border-radius: 8px; border: 1px solid #21262d; font-size: 0.95rem; line-height: 1.5; text-align: left; overflow-x: auto;">
+┌───────────────────────────── WARNING ─────────────────────────────┐
+│ Sensitive data exposure detected in public portfolio              │
+│                                                                   │
+│   Name: Asma Neji                                                 │
+│   Role: Junior Cybersecurity Engineer                             │
+│                                                                   │
+│   Phone: +216 97 322 007                                          │
+│   Email: asmaneji20@gmail.com                                     │
+│   Location: Tunis, Tunisia                                        │
+│                                                                   │
+│ Potential impact if leaked:                                       │
+│ • Phishing / SIM swapping attacks                                 │
+│ • Targeted social engineering                                     │
+│ • Identity theft & doxxing                                        │
+│ • Physical location tracking                                      │
+│                                                                   │
+│ Lesson: Never expose PII in public — secure the signal.           │
+└───────────────────────────────────────────────────────────────────┘
     </pre>
   </div>
 
-  <!-- Contact + buttons – one tight row -->
-  <div style="display: flex; justify-content: center; align-items: center; gap: 2.8rem; flex-wrap: wrap; margin-top: 1.5rem; font-size: 1.15rem;">
-    <span style="color: var(--text-muted);">+216 97 322 007</span>
-    <a href="mailto:asmaneji20@gmail.com" style="color: var(--accent); text-decoration: none;">asmaneji20@gmail.com</a>
-    <span style="color: var(--text-muted);">Tunis, Tunisia</span>
-  </div>
-
-  <div style="display: flex; justify-content: center; gap: 1.8rem; flex-wrap: wrap; margin-top: 2.2rem;">
+  <!-- Logo-only buttons – super clean -->
+  <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1.8rem;">
     <a href="https://linkedin.com/in/asma-neji" 
-       style="display: flex; align-items: center; gap: 0.6rem; color: #fff; background: var(--accent); padding: 0.8rem 1.8rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: all 0.3s;">
-      <span>↗</span> LinkedIn
+       style="color: var(--accent); font-size: 2rem; text-decoration: none; transition: all 0.3s;">
+      ↗
     </a>
     <a href="https://github.com/Asma812" 
-       style="display: flex; align-items: center; gap: 0.6rem; color: #fff; background: #171515; padding: 0.8rem 1.8rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: all 0.3s;">
-      <span>🐙</span> GitHub
+       style="color: var(--accent); font-size: 2rem; text-decoration: none; transition: all 0.3s;">
+      🐙
     </a>
     <a href="/assets/cv/AsmaNEJI_CV.pdf" 
-       style="display: flex; align-items: center; gap: 0.6rem; color: #fff; background: var(--green); padding: 0.8rem 1.8rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: all 0.3s;">
-      <span>📄</span> Download CV
+       style="color: var(--accent); font-size: 2rem; text-decoration: none; transition: all 0.3s;">
+      📄
     </a>
   </div>
 </div>
