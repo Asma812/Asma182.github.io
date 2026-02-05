@@ -6,53 +6,49 @@ title: Welcome
 <div class="container" markdown="1">
 
 <!-- HERO SECTION -->
-<div style="text-align: center; padding: 5rem 1rem 4rem; max-width: 1000px; margin: 0 auto;">
-  <h1 style="font-family: 'JetBrains Mono', monospace; font-size: 3.6rem; margin: 0 0 0.8rem; color: var(--text);">
+<div style="text-align: center; padding: 4rem 1rem 3rem; max-width: 1000px; margin: 0 auto;">
+  <h1 style="font-family: 'JetBrains Mono', monospace; font-size: 3.2rem; margin: 0 0 0.6rem; color: var(--text); letter-spacing: -1px;">
     Asma NEJI
   </h1>
-  <p style="font-size: 1.8rem; margin: 0 0 1.2rem; color: var(--accent); font-weight: 600;">
-    Junior Cybersecurity Engineer
-  </p>
 
-  <!-- Cybersecurity trick: short nmap-style self-scan -->
-  <div style="margin: 2rem auto; max-width: 800px;">
-    <pre style="background: #0a0e14; color: #00b894; font-family: 'JetBrains Mono', monospace; padding: 1.4rem; border-radius: 10px; border: 1px solid #21262d; font-size: 1rem; line-height: 1.5; text-align: left; overflow-x: auto;">
-Nmap scan report for asma.neji (localhost)
-Host is up (0.00008s latency)
-PORT   STATE SERVICE
-22/tcp open  ssh
-80/tcp open  http
-443/tcp open  https
+  <!-- Cybersecurity trick: dig + traceroute style + 3-line intro -->
+  <div style="margin: 1.8rem auto; max-width: 780px;">
+    <pre style="background: #0a0e14; color: #00b894; font-family: 'JetBrains Mono', monospace; padding: 1.3rem; border-radius: 10px; border: 1px solid #21262d; font-size: 0.98rem; line-height: 1.55; text-align: left; overflow-x: auto;">
+dig asma.neji +short
+  185.199.108.153   ; github.io edge
 
-OS details: Linux 5.x|6.x (Ubuntu/Debian)
-Device type: general purpose
-Running: Linux 5.X|6.X
-OS CPE: cpe:/o:linux:linux_kernel
+traceroute asma.neji
+  1  192.168.1.1     0.8 ms
+  2  isp-gateway      4.2 ms
+  3  te Tunis node    12 ms
+  4  global backbone  28 ms
+  5  github edge      42 ms
 
-root@asma:~# echo "Threat Intelligence | Telecom Security | AI Defense | Pentesting | DevSecOps"
-root@asma:~# echo "Secure the signal. Defend the spectrum."
+Junior Cybersecurity Engineer
+Threat Intelligence • Telecom Security • AI Defense • Pentesting • DevSecOps
+Secure the signal. Defend the spectrum.
     </pre>
   </div>
 
-  <!-- Contact + links – one clean row -->
-  <div style="display: flex; justify-content: center; align-items: center; gap: 2.5rem; flex-wrap: wrap; margin: 2rem 0; font-size: 1.15rem;">
+  <!-- Contact + buttons – one tight row -->
+  <div style="display: flex; justify-content: center; align-items: center; gap: 2.8rem; flex-wrap: wrap; margin-top: 1.5rem; font-size: 1.15rem;">
     <span style="color: var(--text-muted);">+216 97 322 007</span>
     <a href="mailto:asmaneji20@gmail.com" style="color: var(--accent); text-decoration: none;">asmaneji20@gmail.com</a>
     <span style="color: var(--text-muted);">Tunis, Tunisia</span>
   </div>
 
-  <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 2.5rem;">
+  <div style="display: flex; justify-content: center; gap: 1.8rem; flex-wrap: wrap; margin-top: 2.2rem;">
     <a href="https://linkedin.com/in/asma-neji" 
-       style="color: #fff; background: var(--accent); padding: 0.9rem 2.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s;">
-      LinkedIn
+       style="display: flex; align-items: center; gap: 0.6rem; color: #fff; background: var(--accent); padding: 0.8rem 1.8rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: all 0.3s;">
+      <span>↗</span> LinkedIn
     </a>
     <a href="https://github.com/Asma812" 
-       style="color: #fff; background: #171515; padding: 0.9rem 2.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s;">
-      GitHub
+       style="display: flex; align-items: center; gap: 0.6rem; color: #fff; background: #171515; padding: 0.8rem 1.8rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: all 0.3s;">
+      <span>🐙</span> GitHub
     </a>
     <a href="/assets/cv/AsmaNEJI_CV.pdf" 
-       style="color: #fff; background: var(--green); padding: 0.9rem 2.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s;">
-      Download CV
+       style="display: flex; align-items: center; gap: 0.6rem; color: #fff; background: var(--green); padding: 0.8rem 1.8rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: all 0.3s;">
+      <span>📄</span> Download CV
     </a>
   </div>
 </div>
