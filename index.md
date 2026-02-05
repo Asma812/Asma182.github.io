@@ -6,59 +6,54 @@ title: Welcome
 <div class="container" markdown="1">
 
 <!-- HERO SECTION -->
-<div style="text-align: center; padding: 7rem 1rem 5rem; max-width: 1000px; margin: 0 auto;">
-  <h1 style="color: var(--text); font-size: 5rem; margin: 0; font-family: 'JetBrains Mono', monospace; letter-spacing: -4px;">
+<div style="text-align: center; padding: 5rem 1rem 4rem; max-width: 1000px; margin: 0 auto;">
+  <h1 style="font-family: 'JetBrains Mono', monospace; font-size: 3.6rem; margin: 0 0 0.8rem; color: var(--text);">
     Asma NEJI
   </h1>
-  <p style="color: var(--accent); font-size: 2.5rem; margin: 1.5rem 0; font-weight: 700;">
+  <p style="font-size: 1.8rem; margin: 0 0 1.2rem; color: var(--accent); font-weight: 600;">
     Junior Cybersecurity Engineer
   </p>
-  <p style="color: var(--text-muted); font-size: 1.7rem; max-width: 900px; margin: 0 auto 3rem;">
-    Threat Intelligence • Telecom Security • AI Defense • Penetration Testing • DevSecOps
-  </p>
 
-  <!-- Cybersecurity trick: nmap-style scan output -->
-  <div style="margin: 3rem auto; max-width: 900px;">
-    <pre style="background: #0b0e14; color: #00b894; font-family: 'JetBrains Mono', monospace; padding: 1.8rem; border-radius: 12px; border: 1px solid #21262d; font-size: 1.05rem; line-height: 1.6; text-align: left; overflow-x: auto;">
-Starting Nmap 7.94 ( https://nmap.org ) at 2026-02-05 12:51 CET
+  <!-- Cybersecurity trick: short nmap-style self-scan -->
+  <div style="margin: 2rem auto; max-width: 800px;">
+    <pre style="background: #0a0e14; color: #00b894; font-family: 'JetBrains Mono', monospace; padding: 1.4rem; border-radius: 10px; border: 1px solid #21262d; font-size: 1rem; line-height: 1.5; text-align: left; overflow-x: auto;">
 Nmap scan report for asma.neji (localhost)
-Host is up (0.00012s latency).
-Not shown: 65530 closed tcp ports (reset)
-PORT     STATE SERVICE    VERSION
-22/tcp   open  ssh        OpenSSH 8.9p1 Ubuntu (protocol 2.0)
-80/tcp   open  http       nginx 1.18.0 (Ubuntu)
-443/tcp  open  https      nginx 1.18.0 (Ubuntu)
-8080/tcp open  http-proxy Squid http proxy 5.2
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+Host is up (0.00008s latency)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+443/tcp open  https
 
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 12.34 seconds
-
-OS fingerprint: Linux 5.x|6.x (Ubuntu/Debian)
+OS details: Linux 5.x|6.x (Ubuntu/Debian)
 Device type: general purpose
 Running: Linux 5.X|6.X
-OS CPE: cpe:/o:linux:linux_kernel:5 cpe:/o:linux:linux_kernel:6
-OS details: Linux 5.4 - 6.5 (Ubuntu/Debian)
+OS CPE: cpe:/o:linux:linux_kernel
 
-root@asma:~# cat /etc/motd
-Welcome to the secure zone.
-Threat hunting • Network defense • AI anomaly detection • Red teaming
-"Secure the signal, defend the spectrum."
+root@asma:~# echo "Threat Intelligence | Telecom Security | AI Defense | Pentesting | DevSecOps"
+root@asma:~# echo "Secure the signal. Defend the spectrum."
     </pre>
   </div>
 
-  <!-- Contact line -->
-  <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; margin-top: 2rem; font-size: 1.35rem;">
+  <!-- Contact + links – one clean row -->
+  <div style="display: flex; justify-content: center; align-items: center; gap: 2.5rem; flex-wrap: wrap; margin: 2rem 0; font-size: 1.15rem;">
     <span style="color: var(--text-muted);">+216 97 322 007</span>
     <a href="mailto:asmaneji20@gmail.com" style="color: var(--accent); text-decoration: none;">asmaneji20@gmail.com</a>
     <span style="color: var(--text-muted);">Tunis, Tunisia</span>
   </div>
 
-  <!-- Buttons -->
-  <div style="margin-top: 4.5rem; display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap;">
-    <a href="https://linkedin.com/in/asma-neji" style="color: #fff; background: var(--accent); padding: 1.1rem 2.8rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.2rem; transition: all 0.3s;">LinkedIn</a>
-    <a href="https://github.com/Asma812" style="color: #fff; background: #171515; padding: 1.1rem 2.8rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.2rem; transition: all 0.3s;">GitHub</a>
-    <a href="/assets/cv/AsmaNEJI_CV.pdf" style="color: #fff; background: var(--green); padding: 1.1rem 2.8rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.2rem; transition: all 0.3s;">Download CV</a>
+  <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 2.5rem;">
+    <a href="https://linkedin.com/in/asma-neji" 
+       style="color: #fff; background: var(--accent); padding: 0.9rem 2.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s;">
+      LinkedIn
+    </a>
+    <a href="https://github.com/Asma812" 
+       style="color: #fff; background: #171515; padding: 0.9rem 2.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s;">
+      GitHub
+    </a>
+    <a href="/assets/cv/AsmaNEJI_CV.pdf" 
+       style="color: #fff; background: var(--green); padding: 0.9rem 2.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s;">
+      Download CV
+    </a>
   </div>
 </div>
 
