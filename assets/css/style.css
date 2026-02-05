@@ -1,24 +1,24 @@
 :root {
-  --bg: #0b0e14;
+  --bg: #0a0e14;
   --surface: #11151c;
   --text: #e6edf3;
   --text-muted: #8b9eaf;
   --border: #21262d;
-  --shadow: 0 8px 24px rgba(0,0,0,0.4);
-  --accent: #00d4ff;       /* cyan - main */
+  --shadow: 0 6px 20px rgba(0,0,0,0.35);
+  --accent: #00d4ff;       /* main cyber cyan */
   --blue: #58a6ff;         /* networking */
-  --green: #3fb950;        /* devops / success */
-  --red: #f85149;          /* security / alerts */
-  --purple: #b083f0;       /* AI / projects */
+  --green: #3fb950;        /* DevOps */
+  --red: #f85149;          /* security alerts */
+  --purple: #b083f0;       /* AI/projects */
 }
 
 [data-theme="light"] {
-  --bg: #fafbfc;
+  --bg: #f9fbfd;
   --surface: #ffffff;
   --text: #0d1117;
   --text-muted: #57606a;
   --border: #d0d7de;
-  --shadow: 0 6px 20px rgba(0,0,0,0.08);
+  --shadow: 0 4px 16px rgba(0,0,0,0.08);
   --accent: #0366d6;
   --blue: #0366d6;
   --green: #1a7f37;
@@ -32,7 +32,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
@@ -52,7 +52,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
 }
 
 header .container {
@@ -71,12 +71,22 @@ header h1 {
 header h1 a {
   color: var(--text);
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+header h1 a:hover {
+  color: var(--accent);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 header nav a {
   color: var(--text-muted);
   text-decoration: none;
-  margin-left: 2rem;
   font-weight: 500;
   font-size: 1rem;
   transition: color 0.3s;
@@ -97,45 +107,43 @@ header nav a:hover {
 
 #theme-toggle:hover {
   color: var(--accent);
-  transform: scale(1.15);
+  transform: scale(1.12);
 }
 
 main {
-  padding: 4rem 0 8rem;
+  padding: 5rem 0 8rem;
 }
 
 h1, h2, h3 {
   font-family: 'JetBrains Mono', monospace;
   letter-spacing: -0.5px;
-  margin-top: 0;
 }
 
 h2 {
   color: var(--accent);
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.1rem;
+  margin-bottom: 1.8rem;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.7rem;
 }
 
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 2rem;
-  margin: 2rem 0;
+  padding: 2.2rem;
+  margin: 2.5rem 0;
   transition: all 0.3s ease;
   box-shadow: var(--shadow);
 }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(0,212,255,0.12);
   border-color: var(--accent);
 }
 
 .card summary {
-  font-size: 1.45rem;
+  font-size: 1.5rem;
   font-weight: 600;
   cursor: pointer;
   list-style: none;
@@ -152,30 +160,30 @@ h2 {
 }
 
 .skill-group {
-  margin: 2.5rem 0;
+  margin: 3rem 0;
 }
 
 .skill-group h3 {
   color: var(--text);
-  font-size: 1.25rem;
-  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+  margin-bottom: 1.3rem;
   font-weight: 600;
 }
 
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 0.9rem;
 }
 
 .skill-tag {
   background: var(--surface);
   color: var(--text);
-  padding: 0.6rem 1.3rem;
+  padding: 0.65rem 1.4rem;
   border-radius: 50px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   border: 1px solid var(--border);
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
 .skill-tag:hover {
@@ -185,11 +193,11 @@ h2 {
   transform: translateY(-2px);
 }
 
-/* Category-specific colors */
-.networking .skill-group h3 { color: var(--blue); }
-.devops .skill-group h3 { color: var(--green); }
-.security .skill-group h3 { color: var(--red); }
-.ai .skill-group h3 { color: var(--purple); }
+/* Category colors */
+.networking h3 { color: var(--blue); }
+.devops h3 { color: var(--green); }
+.security h3 { color: var(--red); }
+.ai h3 { color: var(--purple); }
 
 footer {
   text-align: center;
@@ -197,4 +205,16 @@ footer {
   color: var(--text-muted);
   border-top: 1px solid var(--border);
   font-size: 0.95rem;
+}
+
+/* Terminal-style bio trick */
+.terminal {
+  background: #0b0e14;
+  color: #00d4ff;
+  font-family: 'JetBrains Mono', monospace;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #21262d;
+  margin: 2.5rem 0;
+  white-space: pre-wrap;
 }
