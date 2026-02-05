@@ -1,31 +1,29 @@
 :root {
-  --bg: #0a0e14;
+  --bg: #0b0e14;
   --surface: #11151c;
   --text: #e6edf3;
-  --text-light: #8b9eaf;
-  --accent: #00d4ff;      /* Cyan neon */
-  --accent-blue: #58a6ff; /* Blue for networking */
-  --accent-green: #238636; /* Green for DevOps */
-  --accent-red: #da3633;   /* Red for security/pentest */
-  --accent-purple: #a020f0; /* Purple for AI/projects */
+  --text-muted: #8b9eaf;
   --border: #21262d;
-  --shadow: 0 10px 30px rgba(0,212,255,0.15);
-  --glow: 0 0 20px rgba(0,212,255,0.4);
+  --shadow: 0 8px 24px rgba(0,0,0,0.4);
+  --accent: #00d4ff;       /* cyan - main */
+  --blue: #58a6ff;         /* networking */
+  --green: #3fb950;        /* devops / success */
+  --red: #f85149;          /* security / alerts */
+  --purple: #b083f0;       /* AI / projects */
 }
 
 [data-theme="light"] {
-  --bg: #f8f9fa;
+  --bg: #fafbfc;
   --surface: #ffffff;
   --text: #0d1117;
-  --text-light: #444d56;
+  --text-muted: #57606a;
+  --border: #d0d7de;
+  --shadow: 0 6px 20px rgba(0,0,0,0.08);
   --accent: #0366d6;
-  --accent-blue: #0366d6;
-  --accent-green: #1a7f37;
-  --accent-red: #c91c1c;
-  --accent-purple: #6f42c1;
-  --border: #d1d5da;
-  --shadow: 0 8px 25px rgba(0,0,0,0.08);
-  --glow: 0 0 15px rgba(3,102,214,0.2);
+  --blue: #0366d6;
+  --green: #1a7f37;
+  --red: #c91c1c;
+  --purple: #6f42c1;
 }
 
 * {
@@ -34,11 +32,11 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
-  transition: background 0.4s, color 0.4s;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
 .container {
@@ -50,11 +48,11 @@ body {
 header {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
-  padding: 1.2rem 0;
+  padding: 1.4rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
 }
 
 header .container {
@@ -67,28 +65,18 @@ header h1 {
   margin: 0;
   font-family: 'JetBrains Mono', monospace;
   font-size: 1.9rem;
-  letter-spacing: -1px;
+  letter-spacing: -0.8px;
 }
 
 header h1 a {
   color: var(--text);
   text-decoration: none;
-  transition: color 0.3s;
-}
-
-header h1 a:hover {
-  color: var(--accent);
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
 }
 
 header nav a {
-  color: var(--text-light);
+  color: var(--text-muted);
   text-decoration: none;
+  margin-left: 2rem;
   font-weight: 500;
   font-size: 1rem;
   transition: color 0.3s;
@@ -103,99 +91,110 @@ header nav a:hover {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--text);
-  transition: transform 0.3s, color 0.3s;
+  color: var(--text-muted);
+  transition: color 0.3s, transform 0.3s;
 }
 
 #theme-toggle:hover {
-  transform: scale(1.2);
   color: var(--accent);
+  transform: scale(1.15);
 }
 
 main {
-  padding: 4rem 0 6rem;
+  padding: 4rem 0 8rem;
 }
 
 h1, h2, h3 {
   font-family: 'JetBrains Mono', monospace;
   letter-spacing: -0.5px;
+  margin-top: 0;
 }
 
-a {
+h2 {
   color: var(--accent);
-  text-decoration: none;
-  transition: all 0.3s;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.6rem;
 }
 
-a:hover {
-  color: var(--accent);
-  text-shadow: var(--glow);
-}
-
-footer {
-  text-align: center;
-  padding: 3rem 0 2rem;
-  color: var(--text-light);
-  border-top: 1px solid var(--border);
-  font-size: 0.95rem;
-}
-
-/* Cyber badge / skill button */
-.skill-badge {
+.card {
   background: var(--surface);
-  color: var(--accent);
-  padding: 0.7rem 1.4rem;
-  border-radius: 50px;
-  font-size: 1rem;
-  border: 1px solid var(--accent);
-  transition: all 0.4s;
-  box-shadow: 0 4px 15px rgba(0,212,255,0.15);
-  cursor: default;
-}
-
-.skill-badge:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(0,212,255,0.3);
-  background: linear-gradient(135deg, var(--surface), #1a2639);
-}
-
-/* Card style for projects/experience */
-.cyber-card {
-  background: var(--surface);
-  border-radius: 16px;
-  padding: 2rem;
   border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  transition: all 0.3s ease;
   box-shadow: var(--shadow);
-  transition: all 0.4s ease;
-  margin: 2.5rem 0;
 }
 
-.cyber-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 25px 60px rgba(0,212,255,0.25);
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,212,255,0.12);
   border-color: var(--accent);
 }
 
-.cyber-card summary {
-  font-size: 1.6rem;
-  color: var(--accent);
+.card summary {
+  font-size: 1.45rem;
+  font-weight: 600;
   cursor: pointer;
-  font-weight: 700;
   list-style: none;
-  padding: 1.2rem 2rem;
-  background: linear-gradient(to right, var(--surface), #1a2639);
-  border-radius: 12px;
-  transition: all 0.4s;
+  color: var(--text);
+  transition: color 0.3s;
 }
 
-.cyber-card summary:hover {
-  background: linear-gradient(to right, #1a2639, var(--surface));
-  color: #ffffff;
-  text-shadow: var(--glow);
+.card summary:hover {
+  color: var(--accent);
 }
 
-/* Category colors */
-.networking summary { color: var(--accent-blue); }
-.devops summary { color: var(--accent-green); }
-.security summary { color: var(--accent-red); }
-.ai summary { color: var(--accent-purple); }
+.card[open] summary {
+  margin-bottom: 1.5rem;
+}
+
+.skill-group {
+  margin: 2.5rem 0;
+}
+
+.skill-group h3 {
+  color: var(--text);
+  font-size: 1.25rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skill-tag {
+  background: var(--surface);
+  color: var(--text);
+  padding: 0.6rem 1.3rem;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  transition: all 0.3s;
+}
+
+.skill-tag:hover {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Category-specific colors */
+.networking .skill-group h3 { color: var(--blue); }
+.devops .skill-group h3 { color: var(--green); }
+.security .skill-group h3 { color: var(--red); }
+.ai .skill-group h3 { color: var(--purple); }
+
+footer {
+  text-align: center;
+  padding: 4rem 0 2rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  font-size: 0.95rem;
+}
