@@ -1,21 +1,31 @@
 :root {
-  --bg: #0d1117;
-  --surface: #161b22;
-  --text: #c9d1d9;
-  --text-light: #8b949e;
-  --accent: #58a6ff;
-  --border: #30363d;
-  --shadow: 0 4px 6px rgba(0,0,0,0.3);
+  --bg: #0a0e14;
+  --surface: #11151c;
+  --text: #e6edf3;
+  --text-light: #8b9eaf;
+  --accent: #00d4ff;      /* Cyan neon */
+  --accent-blue: #58a6ff; /* Blue for networking */
+  --accent-green: #238636; /* Green for DevOps */
+  --accent-red: #da3633;   /* Red for security/pentest */
+  --accent-purple: #a020f0; /* Purple for AI/projects */
+  --border: #21262d;
+  --shadow: 0 10px 30px rgba(0,212,255,0.15);
+  --glow: 0 0 20px rgba(0,212,255,0.4);
 }
 
 [data-theme="light"] {
-  --bg: #ffffff;
-  --surface: #f6f8fa;
-  --text: #24292e;
-  --text-light: #586069;
+  --bg: #f8f9fa;
+  --surface: #ffffff;
+  --text: #0d1117;
+  --text-light: #444d56;
   --accent: #0366d6;
+  --accent-blue: #0366d6;
+  --accent-green: #1a7f37;
+  --accent-red: #c91c1c;
+  --accent-purple: #6f42c1;
   --border: #d1d5da;
-  --shadow: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow: 0 8px 25px rgba(0,0,0,0.08);
+  --glow: 0 0 15px rgba(3,102,214,0.2);
 }
 
 * {
@@ -27,23 +37,24 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
-  transition: background 0.3s, color 0.3s;
+  line-height: 1.7;
+  transition: background 0.4s, color 0.4s;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 }
 
 header {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
-  padding: 1.5rem 0;
+  padding: 1.2rem 0;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
 }
 
 header .container {
@@ -55,124 +66,136 @@ header .container {
 header h1 {
   margin: 0;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
+  letter-spacing: -1px;
 }
 
 header h1 a {
   color: var(--text);
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+header h1 a:hover {
+  color: var(--accent);
 }
 
 .header-right {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 header nav a {
   color: var(--text-light);
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
 header nav a:hover {
   color: var(--accent);
 }
 
-/* Theme Toggle Button */
 #theme-toggle {
   background: none;
   border: none;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   cursor: pointer;
-  padding: 0.5rem;
   color: var(--text);
-  transition: transform 0.2s;
+  transition: transform 0.3s, color 0.3s;
 }
 
 #theme-toggle:hover {
-  transform: scale(1.15);
-}
-
-.icon-sun, .icon-moon {
-  transition: opacity 0.3s;
-}
-
-[data-theme="dark"] .icon-sun {
-  opacity: 0.3;
-}
-
-[data-theme="light"] .icon-moon {
-  opacity: 0.3;
+  transform: scale(1.2);
+  color: var(--accent);
 }
 
 main {
-  padding: 2rem 0 4rem;
+  padding: 4rem 0 6rem;
 }
 
-.section-box {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1.5rem 2rem;
-  margin: 2rem 0;
-  box-shadow: var(--shadow);
-}
-
-.section-box h2, .section-box h3 {
+h1, h2, h3 {
   font-family: 'JetBrains Mono', monospace;
-  color: var(--text);
-  margin-top: 0;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.section-box table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1rem 0;
-}
-
-.section-box th, .section-box td {
-  padding: 0.75rem;
-  border: 1px solid var(--border);
-  text-align: left;
-}
-
-.section-box th {
-  background: var(--bg);
-  font-weight: 600;
-}
-
-.section-box ul, .section-box ol {
-  padding-left: 1.5rem;
-}
-
-.section-box li {
-  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
 }
 
 a {
   color: var(--accent);
   text-decoration: none;
+  transition: all 0.3s;
 }
 
 a:hover {
-  text-decoration: underline;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background: var(--border);
-  margin: 2.5rem 0;
+  color: var(--accent);
+  text-shadow: var(--glow);
 }
 
 footer {
   text-align: center;
-  padding: 2rem 0;
+  padding: 3rem 0 2rem;
   color: var(--text-light);
-  font-size: 0.9rem;
   border-top: 1px solid var(--border);
+  font-size: 0.95rem;
 }
+
+/* Cyber badge / skill button */
+.skill-badge {
+  background: var(--surface);
+  color: var(--accent);
+  padding: 0.7rem 1.4rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  border: 1px solid var(--accent);
+  transition: all 0.4s;
+  box-shadow: 0 4px 15px rgba(0,212,255,0.15);
+  cursor: default;
+}
+
+.skill-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,212,255,0.3);
+  background: linear-gradient(135deg, var(--surface), #1a2639);
+}
+
+/* Card style for projects/experience */
+.cyber-card {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: all 0.4s ease;
+  margin: 2.5rem 0;
+}
+
+.cyber-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0,212,255,0.25);
+  border-color: var(--accent);
+}
+
+.cyber-card summary {
+  font-size: 1.6rem;
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+  padding: 1.2rem 2rem;
+  background: linear-gradient(to right, var(--surface), #1a2639);
+  border-radius: 12px;
+  transition: all 0.4s;
+}
+
+.cyber-card summary:hover {
+  background: linear-gradient(to right, #1a2639, var(--surface));
+  color: #ffffff;
+  text-shadow: var(--glow);
+}
+
+/* Category colors */
+.networking summary { color: var(--accent-blue); }
+.devops summary { color: var(--accent-green); }
+.security summary { color: var(--accent-red); }
+.ai summary { color: var(--accent-purple); }
