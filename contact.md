@@ -8,7 +8,7 @@ permalink: /contact/
 
 Use the form below to send me a message. I'll reply via email as soon as possible.
 
-<form action="https://formspree.io/f/your-form-id" method="POST" style="max-width: 600px; margin: 2rem auto;">
+<form action="https://formspree.io/f/mjgebrpz" method="POST" style="max-width: 600px; margin: 2rem auto;">
   <div style="margin-bottom: 1.5rem;">
     <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Name</label>
     <input type="text" name="name" id="name" required style="width: 100%; padding: 0.8rem; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); color: var(--text);">
