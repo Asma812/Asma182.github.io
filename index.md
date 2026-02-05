@@ -5,48 +5,58 @@ title: Welcome
 
 <div class="container" markdown="1">
 
-<!-- HERO – Ultra-Compact, One-Screen-Fit, Professional -->
-<div style="text-align: center; padding: 4rem 1rem 3rem; max-width: 900px; margin: 0 auto;">
-  <h1 style="font-family: 'JetBrains Mono', monospace; font-size: 3rem; margin: 0 0 0.5rem; color: var(--text); letter-spacing: -1px;">
+<!-- HERO – Ultra-Compact, One-Screen, Professional -->
+<div style="text-align: center; padding: 3.5rem 1rem 2.5rem; max-width: 860px; margin: 0 auto;">
+  <h1 style="font-family: 'JetBrains Mono', monospace; font-size: 2.8rem; margin: 0 0 0.5rem; color: var(--text); letter-spacing: -1px;">
     Asma NEJI
   </h1>
 
-  <!-- Cybersecurity trick: Leaked data warning simulation -->
-  <div style="margin: 1.5rem auto; max-width: 720px;">
-    <pre style="background: #0a0e14; color: #e63946; font-family: 'JetBrains Mono', monospace; padding: 1.2rem; border-radius: 8px; border: 1px solid #21262d; font-size: 0.95rem; line-height: 1.5; text-align: left; overflow-x: auto;">
-┌───────────────────────────── WARNING ─────────────────────────────┐
-│ Sensitive data exposure detected in public portfolio              │
+  <!-- 3-line real introduction -->
+  <p style="font-size: 1.1rem; color: var(--text-muted); margin: 0 0 1.2rem; line-height: 1.5; max-width: 720px; margin-left: auto; margin-right: auto;">
+    Junior Cybersecurity Engineer from Tunis with strong telecom & network background.<br>
+    Focused on threat intelligence, secure 5G architectures, AI anomaly detection, and DevSecOps.<br>
+    Passionate about turning defense theory into practical, proactive security solutions.
+  </p>
+
+  <!-- Cyber trick: OSINT leak warning – shows real impact of exposed PII -->
+  <div style="margin: 1.4rem auto; max-width: 700px;">
+    <pre style="background: #0a0e14; color: #e63946; font-family: 'JetBrains Mono', monospace; padding: 1.1rem; border-radius: 8px; border: 1px solid #21262d; font-size: 0.9rem; line-height: 1.45; text-align: left; overflow-x: auto;">
+┌───────────────────── PUBLIC OSINT LEAK WARNING ─────────────────────┐
+│                                                                   │
+│   Exposed PII detected in portfolio                               │
 │                                                                   │
 │   Name: Asma Neji                                                 │
 │   Role: Junior Cybersecurity Engineer                             │
 │                                                                   │
-│   Phone: +216 97 322 007                                          │
-│   Email: asmaneji20@gmail.com                                     │
-│   Location: Tunis, Tunisia                                        │
+│   Phone: +216 97 *** ***                                          │
+│   Email: asm****@gmail.com                                        │
+│   Location: Tun**                                                 │
 │                                                                   │
-│ Potential impact if leaked:                                       │
-│ • Phishing / SIM swapping attacks                                 │
-│ • Targeted social engineering                                     │
-│ • Identity theft & doxxing                                        │
-│ • Physical location tracking                                      │
+│ Real-world impact if fully public:                                │
+│ • Targeted phishing / spear-phishing                              │
+│ • SIM swap attacks → account takeover                             │
+│ • Doxxing & physical location tracking                            │
+│ • Stalking / harassment risk                                      │
+│ • Social engineering leverage                                     │
 │                                                                   │
-│ Lesson: Never expose PII in public — secure the signal.           │
+│ Rule #1 in cybersecurity: Never expose PII in public.             │
+│ Secure the signal. Defend the spectrum.                           │
 └───────────────────────────────────────────────────────────────────┘
     </pre>
   </div>
 
-  <!-- Logo-only buttons – super clean -->
-  <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1.8rem;">
+  <!-- Logo-only buttons – official style, no text -->
+  <div style="display: flex; justify-content: center; gap: 2.5rem; margin-top: 1.6rem;">
     <a href="https://linkedin.com/in/asma-neji" 
-       style="color: var(--accent); font-size: 2rem; text-decoration: none; transition: all 0.3s;">
-      ↗
+       style="color: #0a66c2; font-size: 2.4rem; text-decoration: none; transition: transform 0.3s;">
+      in
     </a>
     <a href="https://github.com/Asma812" 
-       style="color: var(--accent); font-size: 2rem; text-decoration: none; transition: all 0.3s;">
-      🐙
+       style="color: #ffffff; font-size: 2.4rem; text-decoration: none; transition: transform 0.3s;">
+      <span style="font-size: 2.6rem;">🐙</span>
     </a>
     <a href="/assets/cv/AsmaNEJI_CV.pdf" 
-       style="color: var(--accent); font-size: 2rem; text-decoration: none; transition: all 0.3s;">
+       style="color: var(--text); font-size: 2.4rem; text-decoration: none; transition: transform 0.3s;">
       📄
     </a>
   </div>
