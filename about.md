@@ -8,7 +8,7 @@ permalink: /about/
   <h1 style="font-family: 'JetBrains Mono', monospace; font-size: 4rem; margin: 0; color: var(--text);">Asma NEJI</h1>
   <p style="font-size: 1.8rem; margin: 1.2rem 0; color: var(--accent);">Junior Cybersecurity Engineer</p>
   <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 800px; margin: 0 auto 2rem;">
-    Tunis, Tunisia • Threat Intelligence • Telecom Security • AI Defense • Pentesting • DevSecOps
+    Tunis, Tunisia • Threat Intelligence • SecOps • AI Defense • Pentesting • DevSecOps
   </p>
   <div style="display: flex; justify-content: center; gap: 2.5rem; margin-top: 1.6rem;">
     <a href="https://linkedin.com/in/asma-neji" 
@@ -140,8 +140,8 @@ permalink: /about/
         <li>Built a prototype that ingested sample dark-web paste data, extracted IOCs, linked them to known campaigns via ATT&CK, and visualized emerging clusters in under a week.</li>
         <li>Dockerized the entire stack (Neo4j + Python workers + Dash/Flask) for reproducible deployment and scalability testing.</li>
       </ul>
-      <p>This wasn't just data collection—it was turning noisy intelligence into actionable, graph-queryable knowledge that could support proactive defense decisions.</p>
-      <a href="https://github.com/Asma812/cti-tudigisec" style="color: var(--red); font-weight: 600;">View Project on GitHub →</a>
+      <p>This wasn't just data collection, it was turning noisy intelligence into actionable, graph-queryable knowledge that could support proactive defense decisions.</p>
+      <a href="https://github.com/Asma812/cti-tudigisec" style="color: var(--red); font-weight: 600;">View Project Architecture →</a>
     </div>
   </details>
 
@@ -163,10 +163,11 @@ permalink: /about/
       <p><strong>PoC Highlights</strong></p>
       <ul>
         <li>Created a demo pipeline that took a sample vulnerable app → ran SonarQube → blocked on critical issues → scanned dependencies → performed automated ZAP scans → forwarded findings to TheHive/OpenCTI.</li>
-        <li>Configured Wazuh rules to detect common attack patterns and auto-quarantine suspicious processes.</li>
+        <li>Configured Auditd and Wazuh rules to detect common attack patterns and auto-quarantine suspicious processes.</li>
       </ul>
-      <p>The result was a pipeline that didn't just "add security"—it embedded it as a natural part of delivery, reducing mean-time-to-remediate through automation.</p>
-      <a href="https://github.com/Asma812/devsecops-arribatt" style="color: var(--green); font-weight: 600;">View Project on GitHub →</a>
+      <p>The result was a pipeline that didn't just "add security", it embedded it as a natural part of delivery, reducing mean-time to remediate through automation.</p>
+      <a href="https://github.com/Asma812/devsecops-arribatt" style="color: var(--green); font-weight: 600;">View Project Architecture →</a>
+    </div>
     </div>
   </details>
 
@@ -180,17 +181,14 @@ permalink: /about/
       <p>Focused on the AIL (Analysis Information Leak) framework:</p>
       <ul>
         <li>Explored its modular crawler architecture for ingesting pastes, hidden services, and protected forums.</li>
-        <li>Tested extraction logic for IOCs (credentials, hashes, domains) and classification (leak type, sensitivity).</li>
-        <li>Analyzed how AIL handles unstructured streams → correlates items → flags high-value intelligence.</li>
       </ul>
       <p><strong>PoC Highlights</strong></p>
       <ul>
-        <li>Ran controlled tests on sample paste sites and Tor onions → evaluated recall/precision for credential leaks and vulnerability mentions.</li>
-        <li>Mapped dark web communication flows (onion routing, protocol behaviors) to understand evasion techniques.</li>
+        <li>Performed basic crawling on sample paste sites and Tor onions → evaluated recall/precision for credential leaks and vulnerability mentions.</li>
       </ul>
-      <p>This experience taught me how to think adversarially: understand attacker infrastructure to better defend against it.</p>
-      <a href="https://github.com/Asma812/cti-sama" style="color: var(--red); font-weight: 600;">View Project on GitHub →</a>
+      <p>This experience taught me how to do a threat intelligence research.</p>
     </div>
+    <a href="https://github.com/Asma812/cti-sama" style="color: var(--red); font-weight: 600;">View Project Architecture →</a>
   </details>
 
   <details class="card" style="margin: 1.8rem 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden;">
@@ -198,22 +196,23 @@ permalink: /about/
       Cyber Security Intern – RIADVICE (Jan 2022 – May 2022)
     </summary>
     <div style="padding: 1.8rem; background: var(--surface);">
-      <p>My first hands-on hardening project—focused on turning a standard server environment into a defensible one using open-source tools and automation.</p>
+      <p>My first hands-on hardening project focused on turning a standard server environment into a defensible one using open-source tools and automation.</p>
       <p><strong>Core Thinking & Architecture</strong><br>Adopted a layered defense model (CIS benchmarks as baseline) with emphasis on visibility, prevention, and response.</p>
       <p>Key decisions:</p>
       <ul>
         <li>Central visibility: Deployed Wazuh as the SIEM core for log aggregation, FIM, rootkit detection, and active response.</li>
+        <li>Simulated attacks using nmap, Burpsuite, sqlmap, Owasp ZAP, Openvas and metasploit.</li>
         <li>Web & host protection: Integrated ModSecurity (WAF rules), ClamAV (malware scanning), AIDE (file integrity), Tiger (security auditing), and Fail2Ban (brute-force blocking).</li>
         <li>Automation-first: Wrote Ansible playbooks to enforce configurations, deploy agents, and apply hardening policies consistently across servers.</li>
         <li>Alerting loop: Configured webhook-based alerts from Wazuh to external channels for rapid incident handling.</li>
       </ul>
       <p><strong>PoC Highlights</strong></p>
       <ul>
-        <li>Built a hardened prototype server: Applied CIS Level 1 benchmarks → layered tools → simulated attacks (brute-force, web exploits) → verified blocks/alerts.</li>
-        <li>Developed Ansible roles that idempotently managed authentication hardening (key-only SSH, password policies).</li>
+        <li>Built a hardened prototype server: Applied CIS Level 1 benchmarks → layered tools → simulated attacks → verified blocks/alerts.</li>
+        <li>Developed Ansible roles that idempotently managed servers hardening</li>
       </ul>
       <p>This internship solidified my belief in infrastructure-as-code for security: repeatable, auditable, and scalable hardening.</p>
-      <a href="https://github.com/Asma812/hardening-riadvice" style="color: var(--accent); font-weight: 600;">View Project on GitHub →</a>
+      <a href="https://github.com/Asma812/hardening-riadvice" style="color: var(--accent); font-weight: 600;">View Project Architecture →</a>
     </div>
   </details>
 </section>
@@ -227,22 +226,20 @@ permalink: /about/
       Optimizing a Virtualized 5G Network with SDN, NFV, AI & Blockchain – Tools: OpenDaylight, Open5GS, TensorFlow, Docker, Hyperledger Fabric, Prometheus, Grafana
     </summary>
     <div style="padding: 1.8rem; background: var(--surface);">
-      <p><strong>End-of-studies engineering project (2024–2025)</strong></p>
-      <p>This was my most ambitious academic work: building a complete virtualized 5G end-to-end prototype that combined modern network softwarization with intelligent automation and trust mechanisms.</p>
+      <p>This included building a complete virtualized 5G end-to-end prototype that combined modern network softwarization with intelligent automation and trust mechanisms.</p>
       <p><strong>Core Thinking & Architecture</strong><br>I wanted to demonstrate that 5G can be more than high-speed connectivity — it can become a programmable, self-optimizing, and tamper-resistant platform.</p>
       <p>I chose a fully disaggregated architecture:</p>
       <ul>
         <li><strong>SDN control plane</strong> → OpenDaylight as the central brain (southbound OpenFlow → Open5GS core elements)</li>
-        <li><strong>NFV data plane</strong> → Containerized 5G core functions (UPF, AMF, SMF) running on Docker + Kubernetes-like orchestration</li>
-        <li><strong>AI-driven optimization layer</strong> → TensorFlow models continuously analyzing Prometheus metrics (latency, throughput, handover success rate, resource utilization) to predict congestion and dynamically adjust slicing parameters and traffic steering</li>
-        <li><strong>Blockchain trust layer</strong> → Hyperledger Fabric to record critical network events (slice creation/modification, handover decisions, SLA compliance) in an immutable ledger — providing auditability and preventing fraudulent manipulation of network policies</li>
+        <li><strong>NFV data plane</strong> → Containerized 5G core functions (UPF, AMF, SMF) running on Docker</li>
+        <li><strong>AI-driven optimization layer</strong> → TensorFlow models continuously analyzing Prometheus metrics (latency, throughput, handover success rate) to predict congestion and dynamically adjust slicing parameters and traffic steering</li>
       </ul>
       <p><strong>PoC Highlights & Innovations</strong></p>
       <ul>
-        <li>Implemented network slicing with dynamic QoS enforcement (e.g., low-latency slice for URLLC, high-throughput for eMBB)</li>
+        <li>Implemented network slicing with dynamic QoS enforcement</li>
         <li>Trained lightweight ML models to detect anomalies and proactively re-balance resources before degradation occurred</li>
-        <li>Demonstrated end-to-end visibility with Grafana dashboards showing real-time slice performance + blockchain transaction log</li>
-        <li>Proved concept of “trust-by-design” — any unauthorized slice modification attempt would be detectable via ledger inconsistency</li>
+        <li>Demonstrated end-to-end visibility with Grafana dashboards showing real-time slice performance</li>
+        <li>Proved concept of “trust-by-design”: any unauthorized slice modification attempt would be detectable via ledger inconsistency</li>
       </ul>
       <p>Instead of a GitHub repository, this work is documented in a detailed technical article that covers architecture diagrams, configuration examples, ML training process, and performance results.</p>
       <a href="https://github.com/Asma812/assets/Article.pdf" style="color: var(--purple); font-weight: 600;">View Project on GitHub →</a>
