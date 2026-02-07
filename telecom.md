@@ -7,13 +7,13 @@ permalink: /telecom/
 <div class="container" style="padding: 3rem 1rem;">
   <h1 style="text-align: center; font-family: 'JetBrains Mono', monospace; color: var(--accent); margin-bottom: 1rem;">Telecom Engineering Roadmap</h1>
   <p style="text-align: center; color: var(--text-muted); font-size: 1.15rem; max-width: 800px; margin: 0 auto 4rem;">
-    Structured lessons from my academic journey — click a card to view the full content.
+    Preview of lessons from my telecom studies. Click a card to view the full content.
   </p>
 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 2rem;">
-    <!-- Lesson 1.1 -->
+    <!-- 1.1 Foundations Math -->
     <a href="/lesson1" style="text-decoration: none; color: inherit;">
-      <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
+      <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://images.unsplash.com/photo-1509228625957-1b6e5c1d8d4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
         <div style="position: relative; z-index: 2; padding: 1.8rem; color: white;">
           <h3 style="margin: 0 0 1rem; font-size: 1.45rem; font-weight: 700;">
             1.1 Foundations (Non-negotiable) – Math Basics
@@ -28,7 +28,7 @@ permalink: /telecom/
       </div>
     </a>
 
-    <!-- Lesson 1.2 -->
+    <!-- 1.2 Foundations Physics & Signals -->
     <a href="/lesson2" style="text-decoration: none; color: inherit;">
       <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
         <div style="position: relative; z-index: 2; padding: 1.8rem; color: white;">
@@ -76,9 +76,9 @@ permalink: /telecom/
       </div>
     </a>
 
-    <!-- Lesson 4 -->
+    <!-- Lesson 4 – now with image -->
     <a href="/lesson4" style="text-decoration: none; color: inherit;">
-      <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://images.unsplash.com/photo-1563204424-5f9e4e8dfc1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
+      <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
         <div style="position: relative; z-index: 2; padding: 1.8rem; color: white;">
           <h3 style="margin: 0 0 1rem; font-size: 1.45rem; font-weight: 700;">
             4 Transmission Media & RF Basics
@@ -118,7 +118,7 @@ permalink: /telecom/
       </div>
     </a>
 
-    <!-- Lesson 7 -->
+    <!-- Lesson 7 – now with image -->
     <a href="/lesson7" style="text-decoration: none; color: inherit;">
       <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://images.unsplash.com/photo-1558494949-ef0d7d6b0d2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
         <div style="position: relative; z-index: 2; padding: 1.8rem; color: white;">
@@ -151,7 +151,21 @@ permalink: /telecom/
       <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
         <div style="position: relative; z-index: 2; padding: 1.8rem; color: white;">
           <h3 style="margin: 0 0 1rem; font-size: 1.45rem; font-weight: 700;">
-            9 Programming for Telecom Engineers
+            9 Tools You MUST Learn 🛠
+          </h3>
+          <p style="margin: 0 0 0.8rem; font-size: 1rem; opacity: 0.9;">
+            Simulation: MATLAB, Simulink, GNU Radio • Networking: Wireshark, GNS3/Packet Tracer, NS-3, Open5GS, srsRAN • Systems: Linux, Bash
+          </p>
+        </div>
+      </div>
+    </a>
+
+    <!-- Lesson 10 – now with image -->
+    <a href="/lesson10" style="text-decoration: none; color: inherit;">
+      <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://images.unsplash.com/photo-1555949963-aa79d0ebc8fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
+        <div style="position: relative; z-index: 2; padding: 1.8rem; color: white;">
+          <h3 style="margin: 0 0 1rem; font-size: 1.45rem; font-weight: 700;">
+            10 Programming for Telecom Engineers
           </h3>
           <p style="margin: 0 0 0.8rem; font-size: 1rem; opacity: 0.9;">
             Python (automation, simulation) • C/C++ (low-level, embedded) • Bash scripting • Use cases: network automation, log analysis, protocol simulation
@@ -160,29 +174,15 @@ permalink: /telecom/
       </div>
     </a>
 
-    <!-- Lesson 10 -->
-    <a href="/lesson10" style="text-decoration: none; color: inherit;">
-      <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://images.unsplash.com/photo-1555949963-aa79d0ebc8fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
+    <!-- Lesson 11 -->
+    <a href="/lesson11" style="text-decoration: none; color: inherit;">
+      <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://images.unsplash.com/photo-1558494949-ef0d7d6b0d2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
         <div style="position: relative; z-index: 2; padding: 1.8rem; color: white;">
           <h3 style="margin: 0 0 1rem; font-size: 1.45rem; font-weight: 700;">
-            10 Telecom Security (Your BIG PLUS)
+            11 Telecom Security (Your BIG PLUS 🔐)
           </h3>
           <p style="margin: 0 0 0.8rem; font-size: 1rem; opacity: 0.9;">
             SS7 vulnerabilities • LTE/5G security • IMS security • SIM authentication • Network monitoring • IDS/IPS • Lawful interception
-          </p>
-        </div>
-      </div>
-    </a>
-
-    <!-- Lesson 11 -->
-    <a href="/lesson11" style="text-decoration: none; color: inherit;">
-      <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
-        <div style="position: relative; z-index: 2; padding: 1.8rem; color: white;">
-          <h3 style="margin: 0 0 1rem; font-size: 1.45rem; font-weight: 700;">
-            11 Practical Projects (VERY IMPORTANT)
-          </h3>
-          <p style="margin: 0 0 0.8rem; font-size: 1rem; opacity: 0.9;">
-            Beginner: QPSK/QAM BER sim, VoIP, Wireshark SIP/RTP • Intermediate: LTE sim, srsRAN+Open5GS • Advanced: 5G core, telecom attack sim, secure VoIP
           </p>
         </div>
       </div>
