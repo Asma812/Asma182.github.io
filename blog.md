@@ -33,7 +33,7 @@ Insights on cybersecurity, threat intelligence, AI in networks, telecom security
         <li>Missing Rate Limiting on Login Endpoint (High)</li>
       </ul>
       <p>Also tested & documented safe items (Informational / Not Vulnerable): XSS, CSRF, CORS, File Upload Execution, SQLi, Clickjacking.</p>
-      <p><a href="[link-to-your-full-crAPI-report]" style="color: var(--red); font-weight: 600; text-decoration: none;">Read Full Bug Bounty Report →</a></p>
+      <p><a href="/bug-report" style="color: var(--red); font-weight: 600; text-decoration: none;">Read Full Bug Bounty Report →</a></p>
     </div>
   </details>
 
