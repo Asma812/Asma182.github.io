@@ -1,0 +1,46 @@
+---
+layout: page
+title: Bug Bounty Report – crAPI (Multiple Vulnerabilities)
+permalink: /bug-report/
+---
+
+# Bug Bounty Report – crAPI
+
+**Target:** crAPI (completely ridiculous API) – public bug bounty target  
+**Researcher:** Asma NEJI  
+**Date:** [Month Year – e.g., February 2026]  
+**Scope:** Full API surface (authentication, orders, shop, identity endpoints)  
+**Methodology:** Manual testing, Burp Suite, custom scripts, business logic analysis
+
+For each confirmed vulnerability, the report includes:
+
+- **Title**
+- **Severity**
+- **Affected endpoint(s)**
+- **Description**
+- **Steps to reproduce**
+- **Impact**
+- **Why it matters**
+
+Tested & documented safe items are listed at the end as “Informational / Not Vulnerable (Tested)”.
+
+## ✅ CONFIRMED VULNERABILITIES (REPORT-READY)
+
+### 1. JWT alg=none Authentication Bypass
+**Severity:** Critical  
+**Category:** Authentication Bypass / Cryptography  
+**Component:** JWT Authentication  
+**Affected Endpoints:** All authenticated API endpoints using JWT  
+
+**Description**  
+The application accepts unsigned JWT tokens by allowing the `alg` header value to be set to `none`. This allows attackers to forge arbitrary tokens without knowing the private signing key.
+
+**Steps to Reproduce**  
+1. Login normally and obtain a valid JWT.  
+2. Decode the JWT header and payload.  
+3. Modify the header:  
+   ```json
+   {
+     "alg": "none",
+     "typ": "JWT"
+   }
