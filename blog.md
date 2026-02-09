@@ -46,7 +46,7 @@ Insights on cybersecurity, threat intelligence, AI in networks, telecom security
       <p><strong>Scope:</strong> [External/Internal/Web/API]</p>
       <p><strong>Findings:</strong> 1× Critical, 3× High • Date: [Month Year]</p>
       <p>Comprehensive external/internal pentest with OSINT, scanning, exploitation, and post-exploitation phases. Key vulnerabilities and remediation recommendations included.</p>
-      <p><a href="[link-to-report-or-writeup]" style="color: var(--accent); font-weight: 600; text-decoration: none;">Read Full Pentest Report →</a></p>
+      <p><a href="/Pentest-report" style="color: var(--accent); font-weight: 600; text-decoration: none;">Read Full Pentest Report →</a></p>
     </div>
   </details>
 
