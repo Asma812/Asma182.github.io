@@ -6,38 +6,24 @@ permalink: /bug-report/
 
 # Bug Bounty Report – crAPI
 
-**Target:** crAPI (completely ridiculous API) – public bug bounty target  
+**Target:** crAPI – public bug bounty target  
 **Researcher:** Asma NEJI  
-**Date:** [Month Year – e.g., February 2026]  
+**Date:** [September 2025]  
 **Scope:** Full API surface (authentication, orders, shop, identity endpoints)  
 **Methodology:** Manual testing, Burp Suite, custom scripts, business logic analysis
 
-For **each bug**, you’ll get:
-
-*   Title
     
-*   Severity
-    
-*   Affected endpoint(s)
-    
-*   Description
-    
-*   Steps to reproduce
-    
-*   Impact
-    
-*   Why it matters
-    
-
-Then I’ll list **TESTED & SAFE** items as **“Informational / Not Vulnerable (Tested)”**, which is _exactly_ how senior hackers document work.
-
-✅ CONFIRMED VULNERABILITIES (REPORT‑READY)
+CONFIRMED VULNERABILITIES
 ==========================================
 
-1️⃣ JWT alg=none Authentication Bypass
+1 JWT alg=none Authentication Bypass
 --------------------------------------
 
-**Severity:** Critical**Category:** Authentication Bypass / Cryptography**Component:** JWT Authentication
+**Severity:** Critical
+
+**Category:** Authentication Bypass / Cryptography
+
+**Component:** JWT Authentication
 
 ### Description
 
@@ -55,10 +41,9 @@ All authenticated API endpoints using JWT authentication.
     
 3.  Modify the header:
     
-
 {    "alg": "none",    "typ": "JWT"  }   `
 
-1.  Modify the payload (optional), e.g. change role.
+1.  Modify the payload, for example change role.
     
 2.  Remove the signature completely so the token ends with a trailing dot:
     
@@ -76,7 +61,7 @@ An attacker can fully bypass authentication and impersonate any user, including 
 
 This leads to complete account takeover and total compromise of the application.
 
-2️⃣ JWT Expiration Not Enforced
+2️ JWT Expiration Not Enforced
 -------------------------------
 
 **Severity:** High**Category:** Authentication / Session Management
@@ -103,7 +88,7 @@ JWT expiration (exp) is not properly validated by the backend. Tokens remain val
 
 Attackers can use expired tokens indefinitely, increasing the impact of token leakage.
 
-3️⃣ Missing JWT Revocation on Logout
+3️ Missing JWT Revocation on Logout
 ------------------------------------
 
 **Severity:** Medium**Category:** Session Management
@@ -125,7 +110,7 @@ Logging out does not invalidate previously issued JWTs. Tokens remain usable eve
 
 Stolen or leaked tokens remain valid even after logout.
 
-4️⃣ Broken Object Level Authorization (IDOR) – Orders API
+4️ Broken Object Level Authorization (IDOR) – Orders API
 ---------------------------------------------------------
 
 **Severity:** High**Category:** Authorization
@@ -153,7 +138,7 @@ The API allows access to order data by changing the id parameter without validat
 
 Exposure of sensitive order and payment information (PII).
 
-5️⃣ Mass Assignment Vulnerability (Privilege Manipulation)
+5️ Mass Assignment Vulnerability (Privilege Manipulation)
 ----------------------------------------------------------
 
 **Severity:** Critical**Category:** API / Authorization
@@ -176,7 +161,7 @@ Send:
 
 Attackers can escalate privileges or manipulate account state.
 
-6️⃣ Business Logic Flaw – Negative Quantity Credit Abuse
+6️ Business Logic Flaw – Negative Quantity Credit Abuse
 --------------------------------------------------------
 
 **Severity:** Critical**Category:** Business Logic
@@ -193,7 +178,7 @@ Negative or extreme values for quantity are accepted, resulting in credit increa
 
 Users can generate unlimited credit and bypass payment systems.
 
-7️⃣ Business Logic Flaw – Unlimited Order Amount
+7️ Business Logic Flaw – Unlimited Order Amount
 ------------------------------------------------
 
 **Severity:** High**Category:** Business Logic
@@ -210,7 +195,7 @@ Extremely large quantities are accepted without validation, leading to negative 
 
 Financial abuse and broken accounting integrity.
 
-8️⃣ Missing Rate Limiting on Login Endpoint
+8️ Missing Rate Limiting on Login Endpoint
 -------------------------------------------
 
 **Severity:** High**Category:** API Security
@@ -234,7 +219,7 @@ The login endpoint allows unlimited authentication attempts without rate limitin
 
 Enables brute-force and credential-stuffing attacks.
 
-🟡 TESTED & SAFE (IMPORTANT BUT NOT VULNERABLE)
+TESTED & SAFE (IMPORTANT BUT NOT VULNERABLE)
 ===============================================
 
 These were **explicitly tested and found safe**, which is good practice to document.
