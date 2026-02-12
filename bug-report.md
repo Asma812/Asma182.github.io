@@ -64,7 +64,9 @@ This leads to complete account takeover and total compromise of the application.
 2️ JWT Expiration Not Enforced
 -------------------------------
 
-**Severity:** High**Category:** Authentication / Session Management
+**Severity:** High
+
+**Category:** Authentication / Session Management
 
 ### Description
 
@@ -91,7 +93,9 @@ Attackers can use expired tokens indefinitely, increasing the impact of token le
 3️ Missing JWT Revocation on Logout
 ------------------------------------
 
-**Severity:** Medium**Category:** Session Management
+**Severity:** Medium
+
+**Category:** Session Management
 
 ### Description
 
@@ -113,7 +117,9 @@ Stolen or leaked tokens remain valid even after logout.
 4️ Broken Object Level Authorization (IDOR) – Orders API
 ---------------------------------------------------------
 
-**Severity:** High**Category:** Authorization
+**Severity:** High
+
+**Category:** Authorization
 
 ### Affected Endpoint
 
@@ -141,7 +147,9 @@ Exposure of sensitive order and payment information (PII).
 5️ Mass Assignment Vulnerability (Privilege Manipulation)
 ----------------------------------------------------------
 
-**Severity:** Critical**Category:** API / Authorization
+**Severity:** Critical
+
+**Category:** API / Authorization
 
 ### Affected Endpoint
 
@@ -164,7 +172,9 @@ Attackers can escalate privileges or manipulate account state.
 6️ Business Logic Flaw – Negative Quantity Credit Abuse
 --------------------------------------------------------
 
-**Severity:** Critical**Category:** Business Logic
+**Severity:** Critical
+
+**Category:** Business Logic
 
 ### Description
 
@@ -181,7 +191,9 @@ Users can generate unlimited credit and bypass payment systems.
 7️ Business Logic Flaw – Unlimited Order Amount
 ------------------------------------------------
 
-**Severity:** High**Category:** Business Logic
+**Severity:** High
+
+**Category:** Business Logic
 
 ### Description
 
@@ -198,7 +210,9 @@ Financial abuse and broken accounting integrity.
 8️ Missing Rate Limiting on Login Endpoint
 -------------------------------------------
 
-**Severity:** High**Category:** API Security
+**Severity:** High
+
+**Category:** API Security
 
 ### Affected Endpoint
 
