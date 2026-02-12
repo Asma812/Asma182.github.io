@@ -10,20 +10,20 @@ Insights on cybersecurity, threat intelligence, AI in networks, telecom security
   <!-- Card 1: Bug Bounty -->
   <div class="card" style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.8rem; transition: all 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
     <h3 style="margin: 0 0 0.8rem; color: var(--red); font-size: 1.35rem;">
-      Bug Bounty Report – [Target / Vulnerability Name]
+      Bug Bounty Report – crAPI
     </h3>
     <p style="color: var(--text-muted); font-size: 0.95rem; margin: 0 0 1rem;">
-      Severity: Critical • Bounty: $$$ • Date: [Month Year]
+      Severity: Critical • Date: 2025
     </p>
     <p style="margin: 0 0 1.2rem;">
-      Discovered [vulnerability type] in [target scope]. Impact: [brief impact]. Full report includes PoC, remediation steps, and bounty details.
+      Discovered multiple vulnerabilities in crAPI with different impact. Full report includes PoC, remediation steps, and bounty details.
     </p>
     <a href="/bug-report" style="color: var(--red); font-weight: 600; text-decoration: none;">Read Full Report →</a>
   </div>
   <!-- Card 2: Pentest -->
   <div class="card" style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.8rem; transition: all 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
     <h3 style="margin: 0 0 0.8rem; color: var(--accent); font-size: 1.35rem;">
-      Penetration Test Report – [Client / Scope Name]
+      Penetration Test Report – 2Million machine on HTB
     </h3>
     <p style="color: var(--text-muted); font-size: 0.95rem; margin: 0 0 1rem;">
       Scope: [External/Internal/Web/API] • Findings: 1× Critical, 3× High • Date: [Month Year]
