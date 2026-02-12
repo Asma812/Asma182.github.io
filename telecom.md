@@ -72,7 +72,7 @@ permalink: /telecom/
     </a>
     <!-- Lesson 4 -->
     <a href="/lesson4" style="text-decoration: none; color: inherit;">
-      <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://images.unsplash.com/photo-1563204424-5f9e4e8dfc1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
+      <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://www.nagarro.com/hubfs/wireless_F-min.jpg'); background-size: cover; background-position: center;">
         <div style="position: relative; z-index: 2; padding: 1.8rem; color: white;">
           <h3 style="margin: 0 0 1rem; font-size: 1.45rem; font-weight: 700;">
             4 Transmission Media & RF Basics
