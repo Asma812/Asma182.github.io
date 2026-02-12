@@ -111,7 +111,7 @@ permalink: /telecom/
     </a>
     <!-- Lesson 7 -->
     <a href="/lesson7" style="text-decoration: none; color: inherit;">
-      <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://images.unsplash.com/photo-1558494949-ef0d7d6b0d2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
+      <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://www.dsbls.com/wp-content/uploads/2021/06/what-is-voip-phone.jpg'); background-size: cover; background-position: center;">
         <div style="position: relative; z-index: 2; padding: 1.8rem; color: white;">
           <h3 style="margin: 0 0 1rem; font-size: 1.45rem; font-weight: 700;">
             7 Telephony & VoIP
@@ -150,10 +150,10 @@ permalink: /telecom/
     </a>
     <!-- Lesson 10 -->
     <a href="/lesson10" style="text-decoration: none; color: inherit;">
-      <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://images.unsplash.com/photo-1555949963-aa79d0ebc8fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
+      <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://tecknexus.com/wp-content/uploads/2025/02/AI-Enhances-Telecom-Security-768x401.jpg)'); background-size: cover; background-position: center;">
         <div style="position: relative; z-index: 2; padding: 1.8rem; color: white;">
           <h3 style="margin: 0 0 1rem; font-size: 1.45rem; font-weight: 700;">
-            10 Telecom Security (Your BIG PLUS)
+            10 Telecom Security 
           </h3>
           <p style="margin: 0 0 0.8rem; font-size: 1rem; opacity: 0.9;">
             SS7 vulnerabilities • LTE/5G security • IMS security • SIM authentication • Network monitoring • IDS/IPS • Lawful interception
@@ -166,7 +166,7 @@ permalink: /telecom/
       <div class="card" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: all 0.3s; min-height: 340px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)); background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
         <div style="position: relative; z-index: 2; padding: 1.8rem; color: white;">
           <h3 style="margin: 0 0 1rem; font-size: 1.45rem; font-weight: 700;">
-            11 Practical Projects (VERY IMPORTANT)
+            11 Practical Projects 
           </h3>
           <p style="margin: 0 0 0.8rem; font-size: 1rem; opacity: 0.9;">
             Beginner: QPSK/QAM BER sim, VoIP, Wireshark SIP/RTP • Intermediate: LTE sim, srsRAN+Open5GS • Advanced: 5G core, telecom attack sim, secure VoIP
